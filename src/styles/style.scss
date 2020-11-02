@@ -8,7 +8,9 @@ body {
     height: 100%;
 }
 
-/* Navigation bar*/
+/* -------------------------------------------------
+   --                Navigation Bar               --
+   ------------------------------------------------*/
 
 nav {
     display: grid;
@@ -53,8 +55,10 @@ nav > button {
     padding: 0.5em;
 }
 
-/* Main Section of Landing Page*/
-
+/* -------------------------------------------------
+   --      Main Section of Landing Page           --
+   ------------------------------------------------*/
+   
 main {
     height: 35rem;
     width: 100%;
@@ -88,7 +92,9 @@ main {
     height: 3em;
 }
 
-/* Footer */
+/* -------------------------------------------------
+   --                   Footer                    --
+   ------------------------------------------------*/
 
 footer {
     display: grid;
@@ -142,4 +148,3 @@ footer > p {
     justify-self: center;
     align-self: center;
 }
-
