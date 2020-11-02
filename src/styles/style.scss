@@ -106,6 +106,82 @@ main {
         font-family: $textfont;
     }
 }
+
+/* -------------------------------------------------
+   --                About Me Main                --
+   ------------------------------------------------*/
+
+#main-about-container {
+    display: flex;
+    flex-direction: row;
+    
+    .about-container {
+        width:25em;
+        padding-right: 1em;
+        margin-right: 3em;
+        padding-left: 2em;
+        background-color: #ffffff;
+
+        h2 {
+            text-align: center;
+            font-family: $headfont;
+            margin-top: 1em;
+        }
+
+        p {
+            word-wrap: break-word;
+           } 
+    }
+}
+
+/* -------------------------------------------------
+   --                Projects Main                --
+   ------------------------------------------------*/
+#project-main{
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+
+    .description-container {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            text-align: center;
+            font-family: $headfont;
+        }
+
+        button {
+            align-self: center; 
+        }
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 900px;
+
+        .project-card {
+            width: 21.875em;
+            margin: 2em 2em 2em 2em;
+            
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
 /* -------------------------------------------------
    --                   Footer                    --
    ------------------------------------------------*/
@@ -168,3 +244,4 @@ footer {
         font-family: $textfont;
     }
 }
+
