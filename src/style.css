@@ -1,0 +1,53 @@
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3rem;
+    height: 3rem;
+    
+}
+
+nav > h3 {
+    margin: 0;
+    padding-left: .5em;
+    width: 20%;
+    height: fit-content;
+    align-self: center;
+}
+
+.navbar-ul  {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-ul > li > a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+nav > button {
+    align-self: center;
+    justify-self: end;
+    height: fit-content;
+    width: fit-content;
+    background-color: #FFFFFF;
+    border-radius: 0.8em;
+    padding: 0.8em;
+    margin-right: .5em;
+}
+
+
