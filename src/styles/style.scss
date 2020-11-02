@@ -1,3 +1,6 @@
+$textfont: 'Open Sans', sans-serif;
+$headfont: 'Russo One', sans-serif;
+
 :root {
     margin: 0;
     padding: 0;
@@ -17,6 +20,8 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3rem;
     height: 3rem;
+    margin-top: .2rem;
+    background-color: chartreuse;
 
 
     h3 {
@@ -27,6 +32,7 @@ nav {
         padding-left: .5em;
         display: inline;
         width: fit-content;
+        font-family: $headfont;
     }
 
     .navbar-ul  {
@@ -37,6 +43,7 @@ nav {
         padding: 0;
         margin: 0;
         list-style: none;
+        font-family: $textfont;
     }
 
     .navbar-ul > li > a {
@@ -53,6 +60,7 @@ nav {
         border-radius: 0.3em;
         margin-right: .5em;
         padding: 0.5em;
+        font-family: $textfont;
     }
 }
 /* -------------------------------------------------
@@ -60,16 +68,17 @@ nav {
    ------------------------------------------------*/
    
 main {
-    height: 35rem;
+    height: 40rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: aqua;
+    margin: .5rem 0 1rem 0;
 
     .main-content {
         display: flex;
         flex-direction: column;
-
         align-items: center;
         width: fit-content;
         text-align: center;
@@ -78,6 +87,11 @@ main {
     h1 {
         font-size: 3rem;
         margin-bottom: 0;
+        font-family: $headfont;
+    }
+    
+    p{
+        font-family: $textfont;
     }
 
 
@@ -89,6 +103,7 @@ main {
         margin-right: .5em;
         width: 280px;
         height: 3em;
+        font-family: $textfont;
     }
 }
 /* -------------------------------------------------
@@ -100,6 +115,7 @@ footer {
     grid-template-columns: 1fr 25% 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 10rem;
+    background-color: brown;
 
 
     .footer-ul-1 {
@@ -110,12 +126,14 @@ footer {
         padding: 0;
         margin: 0;
         list-style: none;
+        font-family: $textfont;
     }
 
     h3 {
         justify-self: center;
         align-self: center;
         font-size: 1.5em;
+        font-family: $headfont;
     }
 
     .footer-ul-2 {
@@ -126,6 +144,7 @@ footer {
         padding: 0;
         margin: 0;
         list-style: none;
+        font-family: $textfont;
     }
 
 
@@ -146,5 +165,6 @@ footer {
         grid-row: 4;
         justify-self: center;
         align-self: center;
+        font-family: $textfont;
     }
 }

@@ -20,6 +20,8 @@ nav {
   -ms-grid-rows: 3rem;
       grid-template-rows: 3rem;
   height: 3rem;
+  margin-top: .2rem;
+  background-color: chartreuse;
 }
 
 nav h3 {
@@ -36,6 +38,7 @@ nav h3 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  font-family: "Russo One", sans-serif;
 }
 
 nav .navbar-ul {
@@ -55,6 +58,7 @@ nav .navbar-ul {
   padding: 0;
   margin: 0;
   list-style: none;
+  font-family: "Open Sans", sans-serif;
 }
 
 nav .navbar-ul > li > a {
@@ -74,13 +78,14 @@ nav button {
   border-radius: 0.3em;
   margin-right: .5em;
   padding: 0.5em;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* -------------------------------------------------
    --      Main Section of Landing Page           --
    ------------------------------------------------*/
 main {
-  height: 35rem;
+  height: 40rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +96,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: aqua;
+  margin: .5rem 0 1rem 0;
 }
 
 main .main-content {
@@ -113,6 +120,11 @@ main .main-content {
 main h1 {
   font-size: 3rem;
   margin-bottom: 0;
+  font-family: "Russo One", sans-serif;
+}
+
+main p {
+  font-family: "Open Sans", sans-serif;
 }
 
 main button {
@@ -123,6 +135,7 @@ main button {
   margin-right: .5em;
   width: 280px;
   height: 3em;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* -------------------------------------------------
@@ -136,6 +149,7 @@ footer {
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
   height: 10rem;
+  background-color: brown;
 }
 
 footer .footer-ul-1 {
@@ -155,6 +169,7 @@ footer .footer-ul-1 {
   padding: 0;
   margin: 0;
   list-style: none;
+  font-family: "Open Sans", sans-serif;
 }
 
 footer h3 {
@@ -164,6 +179,7 @@ footer h3 {
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 1.5em;
+  font-family: "Russo One", sans-serif;
 }
 
 footer .footer-ul-2 {
@@ -183,6 +199,7 @@ footer .footer-ul-2 {
   padding: 0;
   margin: 0;
   list-style: none;
+  font-family: "Open Sans", sans-serif;
 }
 
 footer .footer-line {
@@ -213,5 +230,6 @@ footer p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  font-family: "Open Sans", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
