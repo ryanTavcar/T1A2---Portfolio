@@ -8,20 +8,23 @@ body {
     height: 100%;
 }
 
+/* Navigation bar*/
+
 nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3rem;
     height: 3rem;
-    
 }
 
 nav > h3 {
+    align-self: center;
+    height: fit-content;
+    width: 20%;
     margin: 0;
     padding-left: .5em;
-    width: 20%;
-    height: fit-content;
-    align-self: center;
+    display: inline;
+    width: fit-content;
 }
 
 .navbar-ul  {
@@ -31,6 +34,7 @@ nav > h3 {
     justify-content: space-between;
     padding: 0;
     margin: 0;
+    
 }
 
 .navbar-ul > li > a {
@@ -42,12 +46,44 @@ nav > h3 {
 nav > button {
     align-self: center;
     justify-self: end;
-    height: fit-content;
-    width: fit-content;
+    height: 38px;
+    width: 115px;
     background-color: #FFFFFF;
-    border-radius: 0.8em;
-    padding: 0.8em;
+    border-radius: 0.3em;
     margin-right: .5em;
+    padding: 0.8em;
 }
 
+main {
+    height: 35rem;
+}
+
+.main-content {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    width: fit-content;
+    text-align: center;
+}
+
+ .main-content > h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+
+.main-content > button {
+    margin: 1em;
+    background-color: black;
+    color: #FFFFFF;
+    border-radius: 0.3em;
+    margin-right: .5em;
+    width: 280px;
+    height: 3em;
+}
 
