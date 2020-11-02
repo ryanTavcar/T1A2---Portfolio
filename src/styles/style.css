@@ -22,7 +22,7 @@ nav {
   height: 3rem;
 }
 
-nav > h3 {
+nav h3 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -38,7 +38,7 @@ nav > h3 {
   width: fit-content;
 }
 
-.navbar-ul {
+nav .navbar-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,12 +57,12 @@ nav > h3 {
   list-style: none;
 }
 
-.navbar-ul > li > a {
+nav .navbar-ul > li > a {
   text-decoration: none;
   color: black;
 }
 
-nav > button {
+nav button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -93,7 +93,7 @@ main {
           align-items: center;
 }
 
-.main-content {
+main .main-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,12 +110,12 @@ main {
   text-align: center;
 }
 
-.main-content > h1 {
+main h1 {
   font-size: 3rem;
   margin-bottom: 0;
 }
 
-.main-content > button {
+main button {
   margin: 1em;
   background-color: black;
   color: #FFFFFF;
@@ -138,7 +138,7 @@ footer {
   height: 10rem;
 }
 
-.footer-ul-1 {
+footer .footer-ul-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,7 +157,7 @@ footer {
   list-style: none;
 }
 
-footer > h3 {
+footer h3 {
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -166,7 +166,7 @@ footer > h3 {
   font-size: 1.5em;
 }
 
-.footer-ul-2 {
+footer .footer-ul-2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,7 +185,7 @@ footer > h3 {
   list-style: none;
 }
 
-.footer-line {
+footer .footer-line {
   border: 0 solid black;
   background-color: black;
   -ms-grid-column-align: center;
@@ -203,7 +203,7 @@ footer > h3 {
   grid-column: 1 /  4;
 }
 
-footer > p {
+footer p {
   -ms-grid-column: 2;
   grid-column: 2;
   -ms-grid-row: 4;

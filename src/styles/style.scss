@@ -17,44 +17,44 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3rem;
     height: 3rem;
-}
 
-nav > h3 {
-    align-self: center;
-    height: fit-content;
-    width: 20%;
-    margin: 0;
-    padding-left: .5em;
-    display: inline;
-    width: fit-content;
-}
 
-.navbar-ul  {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
+    h3 {
+        align-self: center;
+        height: fit-content;
+        width: 20%;
+        margin: 0;
+        padding-left: .5em;
+        display: inline;
+        width: fit-content;
+    }
 
-.navbar-ul > li > a {
-    text-decoration: none;
-    color: black;
-}
+    .navbar-ul  {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
 
-nav > button {
-    align-self: center;
-    justify-self: end;
-    height: 38px;
-    width: 115px;
-    background-color: #FFFFFF;
-    border-radius: 0.3em;
-    margin-right: .5em;
-    padding: 0.5em;
-}
+    .navbar-ul > li > a {
+        text-decoration: none;
+        color: black;
+    }
 
+    button {
+        align-self: center;
+        justify-self: end;
+        height: 38px;
+        width: 115px;
+        background-color: #FFFFFF;
+        border-radius: 0.3em;
+        margin-right: .5em;
+        padding: 0.5em;
+    }
+}
 /* -------------------------------------------------
    --      Main Section of Landing Page           --
    ------------------------------------------------*/
@@ -65,33 +65,32 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        width: fit-content;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+
+
+    button {
+        margin: 1em;
+        background-color: black;
+        color: #FFFFFF;
+        border-radius: 0.3em;
+        margin-right: .5em;
+        width: 280px;
+        height: 3em;
+    }
 }
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    width: fit-content;
-    text-align: center;
-}
-
- .main-content > h1 {
-    font-size: 3rem;
-    margin-bottom: 0;
-}
-
-
-.main-content > button {
-    margin: 1em;
-    background-color: black;
-    color: #FFFFFF;
-    border-radius: 0.3em;
-    margin-right: .5em;
-    width: 280px;
-    height: 3em;
-}
-
 /* -------------------------------------------------
    --                   Footer                    --
    ------------------------------------------------*/
@@ -101,50 +100,51 @@ footer {
     grid-template-columns: 1fr 25% 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 10rem;
-}
-
-.footer-ul-1 {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-footer > h3 {
-    justify-self: center;
-    align-self: center;
-    font-size: 1.5em;
-}
-
-.footer-ul-2 {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
 
 
-.footer-line {
-    border:0 solid black;
-    background-color: black;
-    justify-self: center;
-    align-self: center;
-    height:1px;
-    width:60em;
-    margin: 0 8em 0 8em;
-    grid-row: 2 ;
-    grid-column: 1 /  4;
-}
+    .footer-ul-1 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
 
-footer > p {
-    grid-column: 2;
-    grid-row: 4;
-    justify-self: center;
-    align-self: center;
+    h3 {
+        justify-self: center;
+        align-self: center;
+        font-size: 1.5em;
+    }
+
+    .footer-ul-2 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+
+    .footer-line {
+        border:0 solid black;
+        background-color: black;
+        justify-self: center;
+        align-self: center;
+        height:1px;
+        width:60em;
+        margin: 0 8em 0 8em;
+        grid-row: 2 ;
+        grid-column: 1 /  4;
+    }
+
+    p {
+        grid-column: 2;
+        grid-row: 4;
+        justify-self: center;
+        align-self: center;
+    }
 }
