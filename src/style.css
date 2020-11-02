@@ -34,11 +34,10 @@ nav > h3 {
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    
+    list-style: none;
 }
 
 .navbar-ul > li > a {
-    list-style: none;
     text-decoration: none;
     color: black;
 }
@@ -54,18 +53,20 @@ nav > button {
     padding: 0.8em;
 }
 
+/* Main Section of Landing Page*/
+
 main {
     height: 35rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-content {
-
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
     align-items: center;
     width: fit-content;
     text-align: center;
@@ -85,5 +86,60 @@ main {
     margin-right: .5em;
     width: 280px;
     height: 3em;
+}
+
+/* Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 25% 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 10rem;
+}
+
+.footer-ul-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+footer > h3 {
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5em;
+}
+
+.footer-ul-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.footer-line {
+    border:0 solid black;
+    background-color: black;
+    justify-self: center;
+    align-self: center;
+    height:1px;
+    width:60em;
+    margin: 0 8em 0 8em;
+    grid-row: 2 ;
+    grid-column: 1 /  4;
+}
+
+footer > p {
+    grid-column: 2;
+    grid-row: 4;
+    justify-self: center;
+    align-self: center;
 }
 
