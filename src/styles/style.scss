@@ -137,7 +137,8 @@ main {
 /* -------------------------------------------------
    --                Projects Main                --
    ------------------------------------------------*/
-#project-main{
+   
+.card-main{
     height: 80rem;
     display: flex;
     flex-direction: column;
@@ -166,11 +167,17 @@ main {
         .project-card {
             width: 21.875em;
             margin: 2em 2em 2em 2em;
-            
         }
     }
-
 }
+
+/* -------------------------------------------------
+   --                Blog Main                --
+   ------------------------------------------------*/
+
+#card-main {
+    height: 105rem;
+
 
 
 

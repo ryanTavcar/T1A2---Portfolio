@@ -172,7 +172,7 @@ main button {
 /* -------------------------------------------------
    --                Projects Main                --
    ------------------------------------------------*/
-#project-main {
+.card-main {
   height: 80rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,7 +183,7 @@ main button {
           flex-direction: column;
 }
 
-#project-main .description-container {
+.card-main .description-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,18 +193,18 @@ main button {
           flex-direction: column;
 }
 
-#project-main .description-container h2 {
+.card-main .description-container h2 {
   text-align: center;
   font-family: "Russo One", sans-serif;
 }
 
-#project-main .description-container button {
+.card-main .description-container button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-#project-main .card-container {
+.card-main .card-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,9 +220,22 @@ main button {
   width: 900px;
 }
 
-#project-main .card-container .project-card {
+.card-main .card-container .project-card {
   width: 21.875em;
   margin: 2em 2em 2em 2em;
+}
+
+/* -------------------------------------------------
+   --                Blog Main                --
+   ------------------------------------------------*/
+#card-main {
+  height: 105rem;
+}
+
+#card-main #test {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 /* -------------------------------------------------
