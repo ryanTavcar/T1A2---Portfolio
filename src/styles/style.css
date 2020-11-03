@@ -21,7 +21,10 @@ nav {
       grid-template-rows: 3rem;
   height: 3rem;
   margin-top: .2rem;
-  background-color: chartreuse;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 nav h3 {
@@ -84,6 +87,13 @@ nav button {
 /* -------------------------------------------------
    --      Main Section of Landing Page           --
    ------------------------------------------------*/
+body {
+  background-image: url("../images/campsite.png");
+  background-color: #053c21;
+  background-size: cover;
+  background-position: center;
+}
+
 main {
   height: 40rem;
   width: 100%;
@@ -96,8 +106,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: aqua;
-  margin: .5rem 0 1rem 0;
+  margin: 0 0 1rem 0;
 }
 
 main .main-content {
@@ -127,7 +136,7 @@ main p {
   font-family: "Open Sans", sans-serif;
 }
 
-main button {
+main .style-button {
   margin: 1em;
   background-color: black;
   color: #FFFFFF;
@@ -232,10 +241,49 @@ main button {
   height: 105rem;
 }
 
-#card-main #test {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+/* -------------------------------------------------
+   --                  CTA Main                   --
+   ------------------------------------------------*/
+.contact-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45em;
+}
+
+.contact-description h1 {
+  text-align: center;
+}
+
+.contact-description p {
+  padding: 1em 5em 1em 5em;
+}
+
+.contact-description div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact-description div p {
+  padding: 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /* -------------------------------------------------
@@ -249,7 +297,6 @@ footer {
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
   height: 10rem;
-  background-color: brown;
 }
 
 footer .footer-ul-1 {
@@ -266,7 +313,7 @@ footer .footer-ul-1 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 0;
+  padding: 0 0 0 5em;
   margin: 0;
   list-style: none;
   font-family: "Open Sans", sans-serif;
@@ -280,6 +327,7 @@ footer h3 {
       align-self: center;
   font-size: 1.5em;
   font-family: "Russo One", sans-serif;
+  padding-top: .3em;
 }
 
 footer .footer-ul-2 {
@@ -296,7 +344,7 @@ footer .footer-ul-2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 0;
+  padding: 0 5em 0 0;
   margin: 0;
   list-style: none;
   font-family: "Open Sans", sans-serif;

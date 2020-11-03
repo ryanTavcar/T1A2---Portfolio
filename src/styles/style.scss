@@ -14,15 +14,16 @@ body {
 /* -------------------------------------------------
    --                Navigation Bar               --
    ------------------------------------------------*/
-
 nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 3rem;
-    height: 3rem;
-    margin-top: .2rem;
-    background-color: chartreuse;
-
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 3rem;
+height: 3rem;
+margin-top: .2rem;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
 
     h3 {
         align-self: center;
@@ -66,15 +67,20 @@ nav {
 /* -------------------------------------------------
    --      Main Section of Landing Page           --
    ------------------------------------------------*/
-   
+body {
+    background-image: url('../images/campsite.png');
+    background-color: #053c21;
+    background-size: cover;
+    background-position: center;
+}
+
 main {
     height: 40rem;
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: aqua;
-    margin: .5rem 0 1rem 0;
+    align-items: center;;
+    margin: 0 0 1rem 0;
 
     .main-content {
         display: flex;
@@ -95,7 +101,7 @@ main {
     }
 
 
-    button {
+    .style-button {
         margin: 1em;
         background-color: black;
         color: #FFFFFF;
@@ -106,6 +112,7 @@ main {
         font-family: $textfont;
     }
 }
+
 
 /* -------------------------------------------------
    --                About Me Main                --
@@ -177,6 +184,36 @@ main {
 
 #card-main {
     height: 105rem;
+}
+/* -------------------------------------------------
+   --                  CTA Main                   --
+   ------------------------------------------------*/
+
+.contact-description {
+    display: flex;
+    flex-direction: column;
+    width: 45em;
+
+    h1 {
+        text-align: center;;
+    }
+    p {
+        padding: 1em 5em 1em 5em;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+
+        p{
+            padding: 0;
+            height: fit-content;
+            align-self: center;
+        }
+    }
+}
 
 
 
@@ -198,7 +235,7 @@ footer {
     grid-template-columns: 1fr 25% 1fr ;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     height: 10rem;
-    background-color: brown;
+    
 
 
     .footer-ul-1 {
@@ -206,7 +243,7 @@ footer {
         align-items: center;
         flex-direction: row;
         justify-content: space-evenly;
-        padding: 0;
+        padding: 0 0 0 5em;
         margin: 0;
         list-style: none;
         font-family: $textfont;
@@ -217,6 +254,7 @@ footer {
         align-self: center;
         font-size: 1.5em;
         font-family: $headfont;
+        padding-top: .3em;
     }
 
     .footer-ul-2 {
@@ -224,7 +262,7 @@ footer {
         align-items: center;
         flex-direction: row;
         justify-content: space-evenly;
-        padding: 0;
+        padding: 0 5em 0 0;
         margin: 0;
         list-style: none;
         font-family: $textfont;
@@ -251,4 +289,3 @@ footer {
         font-family: $textfont;
     }
 }
-
