@@ -298,9 +298,9 @@ footer {
   display: grid;
   -ms-grid-columns: 1fr 25% 1fr;
       grid-template-columns: 1fr 25% 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-  height: 10rem;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  height: 8rem;
 }
 
 footer .footer-ul-1 {
@@ -323,15 +323,46 @@ footer .footer-ul-1 {
   font-family: "Open Sans", sans-serif;
 }
 
-footer h3 {
-  -ms-grid-column-align: center;
-      justify-self: center;
+footer .social-media-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
+}
+
+footer .social-media-icons .fa {
+  padding: .2em;
   font-size: 1.5em;
-  font-family: "Russo One", sans-serif;
-  padding-top: .3em;
+  width: 1.5em;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer .social-media-icons .fa:hover {
+  opacity: 0.7;
+}
+
+footer .social-media-icons .fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+footer .social-media-icons .fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+footer .social-media-icons .fa-github {
+  background: #000000;
+  color: #ffffff;
 }
 
 footer .footer-ul-2 {
@@ -372,11 +403,16 @@ footer .footer-line {
   grid-column: 1 /  4;
 }
 
+footer a {
+  color: black;
+  text-decoration: none;
+}
+
 footer p {
   -ms-grid-column: 2;
   grid-column: 2;
-  -ms-grid-row: 4;
-  grid-row: 4;
+  -ms-grid-row: 3;
+  grid-row: 3;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
