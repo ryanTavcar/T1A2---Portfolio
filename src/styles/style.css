@@ -87,7 +87,7 @@ nav button {
 /* -------------------------------------------------
    --      Main Section of Landing Page           --
    ------------------------------------------------*/
-body {
+#background-image {
   background-image: url("../images/campsite.png");
   background-color: #053c21;
   background-size: cover;
@@ -124,6 +124,9 @@ main .main-content {
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
+  position: absolute;
+  top: 5em;
+  left: 5em;
 }
 
 main h1 {
@@ -138,7 +141,8 @@ main p {
 
 main .style-button {
   margin: 1em;
-  background-color: black;
+  background-color: #df622c;
+  border: none;
   color: #FFFFFF;
   border-radius: 0.3em;
   margin-right: .5em;
