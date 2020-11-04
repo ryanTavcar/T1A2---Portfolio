@@ -150,6 +150,8 @@ main .style-button {
   width: 280px;
   height: 3em;
   font-family: "Open Sans", sans-serif;
+  text-align: center;
+  text-decoration: none;
 }
 
 /* -------------------------------------------------
@@ -220,7 +222,7 @@ main .style-button {
   font-family: "Russo One", sans-serif;
 }
 
-.card-main .description-container button {
+.card-main .description-container .style-button {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -245,6 +247,11 @@ main .style-button {
 .card-main .card-container .project-card {
   width: 21.875em;
   margin: 2em 2em 2em 2em;
+}
+
+.card-main .card-container .project-card img {
+  width: 350px;
+  height: 350px;
 }
 
 /* -------------------------------------------------

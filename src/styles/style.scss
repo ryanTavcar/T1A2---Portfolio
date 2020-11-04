@@ -107,6 +107,9 @@ main {
         width: 280px;
         height: 3em;
         font-family: $textfont;
+        text-align: center;
+        
+        text-decoration: none;
     }
 }
 
@@ -157,8 +160,9 @@ main {
             text-align: center;
             font-family: $headfont;
         }
-        button {
-            align-self: center; 
+        .style-button {
+            align-self: center;
+            
         }
     }
     .card-container {
@@ -170,6 +174,10 @@ main {
         .project-card {
             width: 21.875em;
             margin: 2em 2em 2em 2em;
+            img {
+                width: 350px;
+                height: 350px;
+            }
         }
     }
 }
