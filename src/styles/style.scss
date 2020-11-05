@@ -111,9 +111,18 @@ main {
         height: 3em;
         font-family: $textfont;
         text-align: center;
-        
         text-decoration: none;
+        box-shadow: inset 0 0 0 0 #ffffff;
+        transition: ease-out 0.3s;
+        
     }
+    .style-button:hover {
+        cursor: pointer;
+        box-shadow: inset 280px 0 0 0 #ffffff;
+        color: #000000;
+        border: 2px solid #000000;
+    }
+
 }
 
 
@@ -121,6 +130,10 @@ main {
    --                About Me Main                --
    ------------------------------------------------*/
 #about-background {
+    background-image: url('../images/fields.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #109652;
     
 }
@@ -133,7 +146,7 @@ main {
         padding-right: 1em;
         margin-right: 3em;
         padding-left: 2em;
-        background-color: #f07c41;
+        background-color: #fa8655;
         h2 {
             text-align: center;
             font-family: $headfont;
@@ -182,10 +195,51 @@ main {
         .project-card {
             width: 17.5em;
             margin: 2em 2em 2em 2em;
+            position: relative;
+            z-index: 1;
             img {
+                position: relative;
                 width: 350px;
                 height: 350px;
+                cursor: pointer;
             }
+
+        }
+        .image_overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+            font-family: $headfont;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+        .image_overlay > * {
+            transform: translateY(20px);
+            transition: transform 0.25s;
+            
+        }
+
+        .image_overlay:hover{
+            opacity: 1;
+            
+        }
+
+        .image_overlay:hover > * {
+            transform: translateY(-40px);
+            
+        }
+
+        .image_title {
+            font-size: 2em;
+            font-weight: bold;
         }
     }
 }
