@@ -130,7 +130,7 @@ main {
    --                About Me Main                --
    ------------------------------------------------*/
 #about-background {
-    background-image: url('../images/fields.png');
+    background-image: url('../images/horizon.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,6 +147,7 @@ main {
         margin-right: 3em;
         padding-left: 2em;
         background-color: #fa8655;
+        opacity: 0.9;
         h2 {
             text-align: center;
             font-family: $headfont;
@@ -203,44 +204,39 @@ main {
                 height: 350px;
                 cursor: pointer;
             }
-
+            .image_overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.6);
+                color: #ffffff;
+                font-family: $headfont;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.25s;
+            }
+            .image_overlay > * {
+                transform: translateY(20px);
+                transition: transform 0.25s;
+            }
+            .image_overlay:hover{
+                opacity: 1; 
+            }
+            .image_overlay:hover > * {
+                transform: translateY(-40px); 
+            }
+            .image_title {
+                font-size: 2em;
+                font-weight: bold;
+            }
+        
         }
-        .image_overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6);
-            color: #ffffff;
-            font-family: $headfont;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.25s;
-        }
-        .image_overlay > * {
-            transform: translateY(20px);
-            transition: transform 0.25s;
-            
-        }
-
-        .image_overlay:hover{
-            opacity: 1;
-            
-        }
-
-        .image_overlay:hover > * {
-            transform: translateY(-40px);
-            
-        }
-
-        .image_title {
-            font-size: 2em;
-            font-weight: bold;
-        }
+        
     }
 }
 
@@ -249,6 +245,10 @@ main {
    ------------------------------------------------*/
 
 #blog-background {
+    background-image: url('../images/desert.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #f07c41;
 }
 
@@ -260,7 +260,11 @@ main {
    ------------------------------------------------*/
 
 #contact-background {
-    background-color: #50bc85;
+    background-image: url('../images/fields.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #109652;
 }
 
 .contact-description {

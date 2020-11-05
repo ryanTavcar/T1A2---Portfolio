@@ -172,7 +172,7 @@ main .style-button:hover {
    --                About Me Main                --
    ------------------------------------------------*/
 #about-background {
-  background-image: url("../images/fields.png");
+  background-image: url("../images/horizon.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,6 +195,7 @@ main .style-button:hover {
   margin-right: 3em;
   padding-left: 2em;
   background-color: #fa8655;
+  opacity: 0.9;
 }
 
 #main-about-container .about-container h2 {
@@ -280,7 +281,7 @@ main .style-button:hover {
   cursor: pointer;
 }
 
-.card-main .card-container .image_overlay {
+.card-main .card-container .project-card .image_overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -307,7 +308,7 @@ main .style-button:hover {
   transition: opacity 0.25s;
 }
 
-.card-main .card-container .image_overlay > * {
+.card-main .card-container .project-card .image_overlay > * {
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
   -webkit-transition: -webkit-transform 0.25s;
@@ -316,16 +317,16 @@ main .style-button:hover {
   transition: transform 0.25s, -webkit-transform 0.25s;
 }
 
-.card-main .card-container .image_overlay:hover {
+.card-main .card-container .project-card .image_overlay:hover {
   opacity: 1;
 }
 
-.card-main .card-container .image_overlay:hover > * {
+.card-main .card-container .project-card .image_overlay:hover > * {
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
 }
 
-.card-main .card-container .image_title {
+.card-main .card-container .project-card .image_title {
   font-size: 2em;
   font-weight: bold;
 }
@@ -334,6 +335,10 @@ main .style-button:hover {
    --                Blog Main                --
    ------------------------------------------------*/
 #blog-background {
+  background-image: url("../images/desert.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #f07c41;
 }
 
@@ -345,7 +350,11 @@ main .style-button:hover {
    --                  CTA Main                   --
    ------------------------------------------------*/
 #contact-background {
-  background-color: #50bc85;
+  background-image: url("../images/fields.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #109652;
 }
 
 .contact-description {
