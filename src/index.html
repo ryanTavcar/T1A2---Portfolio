@@ -30,18 +30,23 @@
 
 <body id="background-image">
     <nav>
-        <h3>RYAN JAMES</h3>
+        <h3 class="desktop-header">RYAN JAMES</h3>
+        <label for="expand-toggle" class="navbar-header">&#9776;</h3></label>
+        <input type="checkbox" id="expand-toggle" />
+
         <ul class="navbar-ul">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html"><span>Contact</span></a></li>
         </ul> 
         <button onclick="window.location.href='contact.html'">Get In Touch</button>
+        
     </nav>
     
     <main>        
-        <div class="main-content animate__animated animate__rotateInDownLeft" >
+        <div class="main-content animate__animated animate__bounceInDown" >
             <h1>Hey! Since Your Already Here,<br> Take A Browse!</h1>
             <p>Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor incididunt<br> ut labore et dolore magna aliqua.</p>
             <button onclick="window.location.href='projects.html'" class="style-button">View Projects</button>
@@ -57,7 +62,7 @@
 
     <div class="social-media-icons">
         <a href="#" class="fa fa-linkedin"></a>
-        <a href="https://github.com/ryanTavcar" class="fa fa-github"></a>
+        <a href="https://github.com/ryanTavcar" target="_blank" class="fa fa-github"></a>
         <a href="#" class="fa fa-twitter"></a>
         
     </div>
