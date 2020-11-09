@@ -3,12 +3,14 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 body {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fdfffd;
+  overflow-x: hidden;
 }
 
 /* -------------------------------------------------
@@ -17,16 +19,14 @@ body {
 nav {
   display: -ms-grid;
   display: grid;
+  width: 100vw;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 3rem;
       grid-template-rows: 3rem;
   height: 3rem;
   margin-top: .2rem;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: static;
 }
 
 nav .desktop-header {
@@ -91,10 +91,12 @@ nav button {
       justify-self: end;
   height: 45px;
   width: 160px;
-  background-color: #FFFFFF;
+  background-color: #F07C41;
+  border: none;
+  color: #fff;
   border-radius: 0.3em;
-  margin-right: .5em;
   padding: 0.5em;
+  margin-right: 1.2em;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -107,11 +109,14 @@ nav button {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100vw;
 }
 
 main {
-  height: 40rem;
-  width: 100%;
+  position: static;
+  height: 100vh;
+  width: 100vw;
+  margin-top: .5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,7 +126,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 0 0 0;
 }
 
 main .main-content {
@@ -138,9 +142,11 @@ main .main-content {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  text-align: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: absolute;
-  top: 5em;
+  top: 8em;
   left: 7em;
 }
 
@@ -155,7 +161,7 @@ main p {
 }
 
 main .style-button {
-  margin: 1em;
+  margin: 1em 0 0 0;
   background-color: #df622c;
   border: none;
   color: #FFFFFF;
@@ -184,55 +190,57 @@ main .style-button:hover {
    --                About Me Main                --
    ------------------------------------------------*/
 #about-background {
-  background-image: url("../images/horizon.png");
-  background-size: cover;
-  background-position: center;
+  background-image: url("../images/campfire.svg");
+  background-size: 43em 43em;
   background-repeat: no-repeat;
-  background-color: #109652;
+  background-position: 10% 150%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #82D0DA;
+  position: static;
 }
 
 #main-about-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  margin-bottom: 10%;
 }
 
 #main-about-container .about-container {
-  width: 25em;
+  width: 35vw;
   padding-right: 1em;
+  background-color: rgba(255, 255, 255, 0.158);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 3em;
   padding-left: 2em;
-  background-color: #fa8655;
-  opacity: 0.9;
 }
 
 #main-about-container .about-container h2 {
   text-align: center;
   font-family: "Russo One", sans-serif;
-  margin-top: 1em;
-}
-
-#main-about-container .about-container p {
-  word-wrap: break-word;
+  padding-top: 1em;
 }
 
 /* -------------------------------------------------
    --                Projects Main                --
    ------------------------------------------------*/
 #project-background {
-  background-image: url("../images/waterfall.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #60c2cf;
+  background-color: #1ba560;
+  width: 100vw;
+  height: 100vh;
 }
 
 .card-main {
-  height: 75rem;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,16 +281,16 @@ main .style-button:hover {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 1100px;
+  margin-left: 3em;
+  width: 100vw;
+  margin-top: 6em;
 }
 
 .card-main .card-container .project-card {
-  width: 17.5em;
-  margin: 2em 2em 2em 2em;
+  width: 22em;
   position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   z-index: 1;
 }
 
@@ -346,16 +354,13 @@ main .style-button:hover {
 /* -------------------------------------------------
    --                Blog Main                --
    ------------------------------------------------*/
-#blog-background {
-  background-image: url("../images/desert.png");
+.blog-background {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #f07c41;
-}
-
-#card-main {
-  height: 96rem;
+  background-color: #F07C41;
+  width: 100vw;
+  height: 130vh;
 }
 
 /* -------------------------------------------------
@@ -367,6 +372,9 @@ main .style-button:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #109652;
+  width: 100vw;
+  height: 100vh;
+  position: static;
 }
 
 .contact-description {
@@ -377,7 +385,8 @@ main .style-button:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 45em;
+  width: 45vw;
+  height: 50%;
 }
 
 .contact-description h1 {
@@ -417,12 +426,15 @@ main .style-button:hover {
 footer {
   display: -ms-grid;
   display: grid;
-  margin-top: 3rem;
+  width: 100vw;
+  margin-top: 1rem;
+  margin-bottom: 2em;
   -ms-grid-columns: 1fr 25% 1fr;
       grid-template-columns: 1fr 25% 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  height: 9rem;
+  -ms-grid-rows: 3em 2em 1em;
+      grid-template-rows: 3em 2em 1em;
+  height: 5rem;
+  position: relative;
 }
 
 footer .footer-ul-1 {
@@ -530,6 +542,10 @@ footer a {
   text-decoration: none;
 }
 
+footer a:hover {
+  color: #df622c;
+}
+
 footer p {
   -ms-grid-column: 2;
   grid-column: 2;
@@ -546,253 +562,130 @@ footer p {
 /* -------------------------------------------------
    --                Media Queries                --
    ------------------------------------------------*/
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-@media only screen and (min-width: 1930px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-  }
-  #background-image {
-    background-image: url("../images/campsite.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  nav {
-    margin-top: .5em;
-  }
-  nav button {
-    width: 300px;
-    height: 1.9em;
-  }
-  main {
-    height: 100%;
-  }
-  main .main-content {
-    top: 10em;
-    left: 7em;
-  }
-  main .main-content h1 {
-    font-size: 2.5em;
-  }
-  main .main-content .style-button {
-    width: 500px;
-    height: 3em;
-  }
-  footer {
-    height: 9em;
-    margin-top: 3rem;
-  }
-}
-
-@media only screen and (max-width: 1930px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-  }
-  #background-image {
-    background-image: url("../images/campsite.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  nav {
-    margin-top: .5em;
-  }
-  nav button {
-    width: 160px;
-  }
-  main {
-    height: 100%;
-  }
-  main .main-content {
-    top: 5em;
-    left: 7em;
-  }
-  main .main-content h1 {
-    font-size: 3em;
-  }
-  main .main-content .style-button {
-    width: 280px;
-    height: 3em;
-  }
-  footer {
-    height: 9em;
-    margin-top: 3rem;
-  }
-}
-
 @media only screen and (max-width: 1440px) {
-  #background-image {
-    background-image: url("../images/campsite.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  /* -------------------------------------------------
+   --                Navigation Bar               --
+   ------------------------------------------------*/
+  /* -------------------------------------------------
+   --      Main Section of Landing Page           --
+   ------------------------------------------------*/
+  /* -------------------------------------------------
+   --                About Me Main                --
+   ------------------------------------------------*/
+  #about-background {
+    background-size: 33em 33em;
+    background-position: 10% 150%;
   }
-  nav {
-    margin-top: .5em;
-    width: 100%;
+  /* -------------------------------------------------
+   --                Projects Main                --
+   ------------------------------------------------*/
+  #project-background {
+    width: 100vw;
+    height: 80em;
   }
-  nav button {
-    width: 160px;
-    margin-right: 1.5em;
-  }
-  main {
-    height: 100%;
-  }
-  main .main-content {
-    top: 6em;
-    left: 5em;
-  }
-  main .main-content h1 {
-    font-size: 2.5em;
-  }
-  main .main-content .style-button {
-    width: 280px;
-    height: 3em;
-  }
-  footer {
-    margin-top: 0;
-    height: 9em;
-  }
-  footer .footer-line {
-    width: 50em;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  main {
-    height: 100%;
-  }
-  main .main-content {
-    top: 8em;
-    left: 5em;
-  }
-  main .main-content h1 {
-    font-size: 1.4em;
-  }
-  main .main-content .style-button {
-    width: 280px;
-    height: 3em;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  nav {
-    width: 45em;
-  }
-  nav button {
-    width: 160px;
-    margin-right: 1.5em;
-  }
-  main {
-    height: 100%;
-  }
-  main .main-content {
-    top: 8em;
-    left: 3em;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    text-align: left;
-  }
-  main .main-content h1 {
-    font-size: 1.7em;
-  }
-  main .main-content p {
-    font-size: .9em;
-  }
-  main .main-content .style-button {
-    width: 10em;
-    height: 3em;
-    margin: 1em 1em 1em 0;
-  }
-  footer {
-    width: 900px;
-    margin-top: 0;
-    height: 9em;
-  }
-  footer .footer-ul-1, footer .footer-ul-2 {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+  .card-main .card-container {
+    width: 70em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0;
   }
-  footer .footer-line {
-    width: 40em;
+  .card-main .card-container .project-card {
+    margin-right: 2em;
   }
+  /* -------------------------------------------------
+   --                Blog Main                --
+   ------------------------------------------------*/
+  .blog-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #F07C41;
+    width: 100vw;
+    height: 100em;
+  }
+  /* -------------------------------------------------
+   --                  CTA Main                   --
+   ------------------------------------------------*/
+  #contact-background {
+    height: 90vh;
+  }
+  /* -------------------------------------------------
+   --                   Footer                    --
+   ------------------------------------------------*/
+}
+
+@media only screen and (max-width: 1024px) {
+  /* -------------------------------------------------
+   --                Navigation Bar               --
+   ------------------------------------------------*/
+  /* -------------------------------------------------
+   --      Main Section of Landing Page           --
+   ------------------------------------------------*/
+  /* -------------------------------------------------
+   --                About Me Main                --
+   ------------------------------------------------*/
+  /* -------------------------------------------------
+   --                Projects Main                --
+   ------------------------------------------------*/
+  /* -------------------------------------------------
+   --                Blog Main                --
+   ------------------------------------------------*/
+  /* -------------------------------------------------
+   --                  CTA Main                   --
+   ------------------------------------------------*/
+  /* -------------------------------------------------
+   --                   Footer                    --
+   ------------------------------------------------*/
 }
 
 @media only screen and (max-width: 768px) {
-  nav {
-    display: inline-block;
-    position: static;
-    width: 100%;
-    height: 1em;
-  }
-  nav .navbar-header {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    font-size: 2em;
-  }
-  nav .desktop-header {
-    display: none;
-  }
-  nav .navbar-ul {
-    display: none;
-    text-align: center;
-  }
-  nav .navbar-ul li {
-    border-bottom: 1px solid green;
-  }
-  nav .navbar-ul > li > a {
-    text-decoration: none;
-    color: black;
-    line-height: 3em;
-  }
-  nav .navbar-ul > li > a span {
-    display: block;
-  }
-  nav button {
-    display: none;
-  }
-  nav #expand-toggle:checked ~ .navbar-ul {
-    display: block;
-  }
-  main {
-    height: 500px;
-  }
-  main .main-content {
-    position: static;
-    margin: 4em 0  0 1em;
-  }
-  main .main-content h1 {
-    font-size: 2em;
-  }
-  footer {
-    width: 100%;
-    height: 10%;
-    margin-top: 8em;
-    display: block;
-  }
-  footer .footer-ul-1, footer .footer-ul-2 {
-    display: none;
-  }
-  footer .footer-line {
-    display: none;
-  }
-  footer p {
-    text-align: center;
-  }
+  /* -------------------------------------------------
+       --                Navigation Bar               --
+       ------------------------------------------------*/
+  /* -------------------------------------------------
+       --      Main Section of Landing Page           --
+       ------------------------------------------------*/
+  /* -------------------------------------------------
+       --                About Me Main                --
+       ------------------------------------------------*/
+  /* -------------------------------------------------
+       --                Projects Main                --
+       ------------------------------------------------*/
+  /* -------------------------------------------------
+       --                Blog Main                --
+       ------------------------------------------------*/
+  /* -------------------------------------------------
+       --                  CTA Main                   --
+       ------------------------------------------------*/
+  /* -------------------------------------------------
+       --                   Footer                    --
+       ------------------------------------------------*/
+}
+
+@media only screen and (max-width: 425px) {
+  /* -------------------------------------------------
+       --                Navigation Bar               --
+       ------------------------------------------------*/
+  /* -------------------------------------------------
+       --      Main Section of Landing Page           --
+       ------------------------------------------------*/
+  /* -------------------------------------------------
+       --                About Me Main                --
+       ------------------------------------------------*/
+  /* -------------------------------------------------
+       --                Projects Main                --
+       ------------------------------------------------*/
+  /* -------------------------------------------------
+       --                Blog Main                --
+       ------------------------------------------------*/
+  /* -------------------------------------------------
+       --                  CTA Main                   --
+       ------------------------------------------------*/
+  /* -------------------------------------------------
+       --                   Footer                    --
+       ------------------------------------------------*/
 }
 /*# sourceMappingURL=style.css.map */

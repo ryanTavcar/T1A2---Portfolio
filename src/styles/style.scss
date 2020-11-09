@@ -5,13 +5,16 @@ $headfont: 'Russo One', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 20px;
-
+    font-size: 16px;
 }
 
 body {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fdfffd;
+    overflow-x: hidden;
+    
+
 }
 
 /* -------------------------------------------------
@@ -19,14 +22,12 @@ body {
    ------------------------------------------------*/
 nav {
     display: grid;
+    width: 100vw;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3rem;
     height: 3rem;
     margin-top: .2rem;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: static;
     .desktop-header {
         align-self: center;
         height: fit-content;
@@ -67,10 +68,12 @@ nav {
         justify-self: end;
         height: 45px;
         width: 160px;
-        background-color: #FFFFFF;
+        background-color: #F07C41;
+        border: none;
+        color: #fff;
         border-radius: 0.3em;
-        margin-right: .5em;
         padding: 0.5em;
+        margin-right: 1.2em;
         font-family: $textfont; 
     }
 
@@ -85,23 +88,26 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100vw;
+
 }
 
 main {
-    height: 40rem;
-    width: 100%;
+    position: static;
+    height: 100vh;
+    width: 100vw;
+    margin-top: .5em;
     display: flex;
     justify-content: center;
-    align-items: center;;
-    margin: 0 0 0 0;
+    align-items: center;
     .main-content {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: fit-content;
-        text-align: center;
+        align-items: flex-start;
         position: absolute;
-        top: 5em;
+        top: 8em;
         left: 7em;
     }
     h1 {
@@ -113,7 +119,7 @@ main {
         font-family: $textfont;
     }
     .style-button {
-        margin: 1em;
+        margin: 1em 0 0 0;
         background-color: #df622c;
         border: none;
         color: #FFFFFF;
@@ -142,32 +148,34 @@ main {
    --                About Me Main                --
    ------------------------------------------------*/
 #about-background {
-    background-image: url('../images/horizon.png');
-    background-size: cover;
-    background-position: center;
+    background-image: url('../images/campfire.svg');
+    background-size: 43em 43em;
     background-repeat: no-repeat;
-    background-color: #109652;
-    
+    background-position: 10% 150%;
+    width: 100vw;
+    height: 100vh;
+    background-color: #82D0DA;
+    position: static;
 }
 
 #main-about-container {
     display: flex;
-    flex-direction: row;
+    margin-bottom: 10%;
+  
+   
     .about-container {
-        width:25em;
+        width: 35vw;
         padding-right: 1em;
+        background-color: rgba(255, 255, 255, 0.158);
+        justify-content: center;
+        align-items: center;
         margin-right: 3em;
         padding-left: 2em;
-        background-color: #fa8655;
-        opacity: 0.9;
         h2 {
             text-align: center;
             font-family: $headfont;
-            margin-top: 1em;
+            padding-top: 1em;
         }
-        p {
-            word-wrap: break-word;
-        } 
     }
 }
 
@@ -176,17 +184,19 @@ main {
    ------------------------------------------------*/
 
 #project-background {
-    background-image: url('../images/waterfall.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #60c2cf;
+    background-color: #1ba560;
+    width: 100vw;
+    height: 100vh;
 }
 
 .card-main{
-    height: 75rem;
+    width: 100vw;
     display: flex;
     flex-direction: column;
+
     .description-container {
         display: flex;
         flex-direction: column;
@@ -203,12 +213,13 @@ main {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        width: 1100px;
+        margin-left: 3em;
+        width: 100vw;
+        margin-top: 6em;
         .project-card {
-            width: 17.5em;
-            margin: 2em 2em 2em 2em;
+            width: 22em;
             position: relative;
+            flex-wrap: wrap;
             z-index: 1;
             img {
                 position: relative;
@@ -256,16 +267,13 @@ main {
    --                Blog Main                --
    ------------------------------------------------*/
 
-#blog-background {
-    background-image: url('../images/desert.png');
+.blog-background {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #f07c41;
-}
-
-#card-main {
-    height: 96rem;
+    background-color: #F07C41;
+    width: 100vw;
+    height: 130vh;
 }
 /* -------------------------------------------------
    --                  CTA Main                   --
@@ -277,12 +285,16 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-color: #109652;
+    width: 100vw;
+    height: 100vh;
+    position: static;
 }
 
 .contact-description {
     display: flex;
     flex-direction: column;
-    width: 45em;
+    width: 45vw;
+    height: 50%;
     h1 {
         text-align: center;;
     }
@@ -307,10 +319,14 @@ main {
 
 footer {
     display: grid;
-    margin-top: 3rem;
+    width: 100vw;
+    margin-top: 1rem;
+    margin-bottom: 2em;
     grid-template-columns: 1fr 25% 1fr ;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 9rem;
+    grid-template-rows: 3em 2em 1em;
+    height: 5rem;
+    position: relative;
+
     .footer-ul-1 {
         display: flex;
         align-items: center;
@@ -359,6 +375,7 @@ footer {
         list-style: none;
         font-family: $textfont;
     }
+
     .footer-line {
         border:0 solid black;
         background-color: black;
@@ -374,6 +391,9 @@ footer {
         color: black;
         text-decoration: none;
     }
+    a:hover{
+        color: #df622c;
+    }
     p {
         grid-column: 2;
         grid-row: 3;
@@ -387,268 +407,143 @@ footer {
    --                Media Queries                --
    ------------------------------------------------*/
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
 @media only screen and (min-width: 1930px) {
-    body {
-        width: 100vw;
-        height: 100vh;
-    }
-    #background-image {
-        background-image: url('../images/campsite.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
 
-    nav {
-        margin-top: .5em;
-        button{
-            width: 300px;
-            height: 1.9em;
-        }
-    }
-
-    main {
-        height: 100%;
-        .main-content {
-            top: 10em;
-            left: 7em;
-            h1{
-                font-size: 2.5em;
-            }
-            .style-button {
-                width: 500px;
-                height: 3em;
-            }
-        }
-    }
-
-    footer {
-        height: 9em;
-        margin-top: 3rem;
-    }
-}
-
-@media only screen and (max-width: 1930px) {
-    body {
-        width: 100vw;
-        height: 100vh;
-        
-    }
-    #background-image {
-        background-image: url('../images/campsite.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    nav {
-        margin-top: .5em;
-        button{
-            width: 160px;
-        }
-    }
-
-    main {
-        height: 100%;
-        .main-content {
-            top: 5em;
-            left: 7em;
-            h1{
-                font-size: 3em;
-            }
-            .style-button {
-                width: 280px;
-                height: 3em;
-            }
-        }
-    }
-
-    footer {
-        height: 9em;
-        margin-top: 3rem;
-    }
 }
 
 @media only screen and (max-width: 1440px) {
 
-    
-    #background-image {
-        background-image: url('../images/campsite.png');
+/* -------------------------------------------------
+   --                Navigation Bar               --
+   ------------------------------------------------*/
+
+
+/* -------------------------------------------------
+   --      Main Section of Landing Page           --
+   ------------------------------------------------*/
+
+
+/* -------------------------------------------------
+   --                About Me Main                --
+   ------------------------------------------------*/
+   #about-background {
+    background-size: 33em 33em;
+    background-position: 10% 150%;
+   }
+
+/* -------------------------------------------------
+   --                Projects Main                --
+   ------------------------------------------------*/
+   #project-background  {
+       width: 100vw;
+       height: 80em;
+   }
+   .card-main {
+       
+       .card-container {
+            width: 70em;
+            justify-content: center;
+            align-items: center;
+            .project-card {
+                margin-right: 2em;
+            }
+        }  
+   }
+   
+/* -------------------------------------------------
+   --                Blog Main                --
+   ------------------------------------------------*/
+   .blog-background {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-color: #F07C41;
+        width: 100vw;
+        height: 100em;
     }
 
-    nav {
-        margin-top: .5em;
-        
-        width: 100%;
-        button{
-            width: 160px;
-            margin-right: 1.5em;
-        }
-    }
+/* -------------------------------------------------
+   --                  CTA Main                   --
+   ------------------------------------------------*/
+   #contact-background {
+       height: 90vh;
+   }
 
-    main {
-        height: 100%;
-        .main-content {
-            top: 6em;
-            left: 5em;
-            h1{
-                font-size: 2.5em;
-            }
-            .style-button {
-                width: 280px;
-                height: 3em;
-            }
-        }
-    }
+/* -------------------------------------------------
+   --                   Footer                    --
+   ------------------------------------------------*/
 
-    footer {
-        margin-top: 0;
-        height: 9em;
-        .footer-line {
-            width:50em;
-        }
-    }
+
 }
 
 @media only screen and (max-width: 1024px) {
-
-    main {
-        height: 100%;
-        .main-content {
-            top: 8em;
-            left: 5em;
-            h1{
-                font-size: 1.4em;
-            }
-            .style-button {
-                width: 280px;
-                height: 3em;
-            }
-        }
-    }
+/* -------------------------------------------------
+   --                Navigation Bar               --
+   ------------------------------------------------*/
+/* -------------------------------------------------
+   --      Main Section of Landing Page           --
+   ------------------------------------------------*/
+/* -------------------------------------------------
+   --                About Me Main                --
+   ------------------------------------------------*/
+/* -------------------------------------------------
+   --                Projects Main                --
+   ------------------------------------------------*/
+/* -------------------------------------------------
+   --                Blog Main                --
+   ------------------------------------------------*/
+/* -------------------------------------------------
+   --                  CTA Main                   --
+   ------------------------------------------------*/
+/* -------------------------------------------------
+   --                   Footer                    --
+   ------------------------------------------------*/
 }
 
 @media only screen and (max-width: 768px) {
-
-    nav {
-        width: 45em;
-        button{
-            width: 160px;
-            margin-right: 1.5em;
-        }
-    }
-
-    main {
-        height: 100%;
-        .main-content {
-            top: 8em;
-            left: 3em;
-            align-items: flex-start;
-            justify-content: flex-start;
-            text-align: left;
-            h1{
-                font-size: 1.7em;
-            }
-            p {
-                font-size: .9em;
-            }
-            .style-button {
-                width: 10em;
-                height: 3em;
-                margin: 1em 1em 1em 0;
-            }
-            }
-        }  
-    
-    footer {
-        width: 900px;
-        margin-top: 0;
-        height: 9em;
-        .footer-ul-1, .footer-ul-2 {
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 0;
-        }
-        .footer-line {
-            width:40em;
-        }
-    }
+    /* -------------------------------------------------
+       --                Navigation Bar               --
+       ------------------------------------------------*/
+    /* -------------------------------------------------
+       --      Main Section of Landing Page           --
+       ------------------------------------------------*/
+    /* -------------------------------------------------
+       --                About Me Main                --
+       ------------------------------------------------*/
+    /* -------------------------------------------------
+       --                Projects Main                --
+       ------------------------------------------------*/
+    /* -------------------------------------------------
+       --                Blog Main                --
+       ------------------------------------------------*/
+    /* -------------------------------------------------
+       --                  CTA Main                   --
+       ------------------------------------------------*/
+    /* -------------------------------------------------
+       --                   Footer                    --
+       ------------------------------------------------*/
 }
 
-@media only screen and (max-width: 768px)    {
-
-
-
-    nav{
-        display: inline-block;
-        position: static;
-        width: 100%;
-        height: 1em;
-        .navbar-header {
-            display: inline-block;
-            width: 1em;
-            height: 1em;
-            font-size: 2em;
-        }
-        .desktop-header {
-            display: none;
-        }
-        .navbar-ul {
-            display: none;
-            text-align: center;
-            
-        }
-        .navbar-ul li {
-            border-bottom: 1px solid green;
-        }
-        .navbar-ul > li > a {
-            text-decoration: none;
-            color: black;
-            line-height: 3em;
-            
-            span{
-                display: block;
-            }
-        }
-        button {
-            display: none;
-        }
-        #expand-toggle:checked ~ .navbar-ul {
-            display: block;
-        }
-    }
-
-    main{
-        height: 500px;
-        .main-content{
-            position: static;
-            margin: 4em 0  0 1em  ;
-            h1 {
-                font-size: 2em;
-            }    
-        }
-    }
-    footer {
-        width: 100%;
-        height: 10%;
-        margin-top: 8em;
-        display: block;
-        .footer-ul-1, .footer-ul-2 {
-            display: none;
-        }
-        .footer-line {
-            display: none;
-        }
-        p {
-            text-align: center;
-        }
-    }
+@media only screen and (max-width: 425px) {
+    /* -------------------------------------------------
+       --                Navigation Bar               --
+       ------------------------------------------------*/
+    /* -------------------------------------------------
+       --      Main Section of Landing Page           --
+       ------------------------------------------------*/
+    /* -------------------------------------------------
+       --                About Me Main                --
+       ------------------------------------------------*/
+    /* -------------------------------------------------
+       --                Projects Main                --
+       ------------------------------------------------*/
+    /* -------------------------------------------------
+       --                Blog Main                --
+       ------------------------------------------------*/
+    /* -------------------------------------------------
+       --                  CTA Main                   --
+       ------------------------------------------------*/
+    /* -------------------------------------------------
+       --                   Footer                    --
+       ------------------------------------------------*/
 }

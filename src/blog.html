@@ -26,20 +26,23 @@
     <title>Ryan James | Portfolio</title>
 </head>
 
-<body id="blog-background">
+<body>
     <nav>
-        <h3>RYAN JAMES</h3>
+        <h3 class="desktop-header">RYAN JAMES</h3>
+        <label for="expand-toggle" class="navbar-header">&#9776;</h3></label>
+        <input type="checkbox" id="expand-toggle" />
+
         <ul class="navbar-ul">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html"><span>Contact</span></a></li>
         </ul> 
-        <button onclick="window.location.href='contact.html'" >Get In Touch</button>
-    </nav>
+        <button onclick="window.location.href='contact.html'">Get In Touch</button>
     </nav>
 
-    <main id="card-main" class="card-main">
+    <main id="card-main" class="card-main blog-background">
         <div class="description-container">
             <h2>Blog</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis distinctio magni omnis.</p>
