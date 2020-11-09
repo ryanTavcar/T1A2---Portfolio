@@ -190,10 +190,6 @@ main .style-button:hover {
    --                About Me Main                --
    ------------------------------------------------*/
 #about-background {
-  background-image: url("../images/campfire.svg");
-  background-size: 43em 43em;
-  background-repeat: no-repeat;
-  background-position: 10% 150%;
   width: 100vw;
   height: 100vh;
   background-color: #82D0DA;
@@ -361,7 +357,7 @@ main .style-button:hover {
   background-repeat: no-repeat;
   background-color: #F07C41;
   width: 100vw;
-  height: 130vh;
+  height: 75em;
 }
 
 /* -------------------------------------------------
@@ -633,6 +629,7 @@ footer p {
     width: 1em;
     height: 1em;
     font-size: 2em;
+    margin-left: .2em;
   }
   nav .desktop-header {
     display: none;
@@ -661,9 +658,41 @@ footer p {
   /* -------------------------------------------------
    --      Main Section of Landing Page           --
    ------------------------------------------------*/
+  #background-image {
+    background-position-x: 60%;
+    position: relative;
+  }
+  main .main-content {
+    left: 3em;
+  }
   /* -------------------------------------------------
    --                About Me Main                --
    ------------------------------------------------*/
+  #about-background {
+    height: 50em;
+  }
+  #main-about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+    width: 30em;
+  }
+  #main-about-container .about-container {
+    margin-bottom: 3em;
+    width: 27em;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #main-about-container img {
+    width: 30em;
+    height: 20em;
+  }
   /* -------------------------------------------------
    --                Projects Main                --
    ------------------------------------------------*/
@@ -690,9 +719,27 @@ footer p {
   /* -------------------------------------------------
    --                Blog Main                --
    ------------------------------------------------*/
+  .blog-background {
+    height: 160em;
+  }
   /* -------------------------------------------------
    --                  CTA Main                   --
    ------------------------------------------------*/
+  .contact-description {
+    height: 40em;
+    width: 20em;
+  }
+  .contact-description p {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 0;
+  }
+  .contact-description div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   /* -------------------------------------------------
    --                   Footer                    --
    ------------------------------------------------*/

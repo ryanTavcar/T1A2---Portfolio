@@ -148,10 +148,7 @@ main {
    --                About Me Main                --
    ------------------------------------------------*/
 #about-background {
-    background-image: url('../images/campfire.svg');
-    background-size: 43em 43em;
-    background-repeat: no-repeat;
-    background-position: 10% 150%;
+    
     width: 100vw;
     height: 100vh;
     background-color: #82D0DA;
@@ -273,7 +270,7 @@ main {
     background-repeat: no-repeat;
     background-color: #F07C41;
     width: 100vw;
-    height: 130vh;
+    height: 75em;
 }
 /* -------------------------------------------------
    --                  CTA Main                   --
@@ -490,6 +487,7 @@ footer {
         width: 1em;
         height: 1em;
         font-size: 2em;
+        margin-left: .2em;
     }
     .desktop-header {
         display: none;
@@ -521,9 +519,37 @@ footer {
 /* -------------------------------------------------
    --      Main Section of Landing Page           --
    ------------------------------------------------*/
+   #background-image {
+       background-position-x: 60%;  
+       position: relative; 
+   }
+   main {
+       .main-content {
+           left: 3em;
+       }
+   }
 /* -------------------------------------------------
    --                About Me Main                --
    ------------------------------------------------*/
+   #about-background {
+       height: 50em;
+   }
+   #main-about-container {
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 0;
+       width: 30em;
+       .about-container {
+           margin-bottom: 3em;
+           width:27em;
+           height: fit-content;
+
+       }
+       img {
+           width: 30em;
+           height: 20em;
+       }
+   }
 /* -------------------------------------------------
    --                Projects Main                --
    ------------------------------------------------*/
@@ -550,9 +576,24 @@ footer {
 /* -------------------------------------------------
    --                Blog Main                --
    ------------------------------------------------*/
+   .blog-background {
+    height: 160em;
+   }
 /* -------------------------------------------------
    --                  CTA Main                   --
    ------------------------------------------------*/
+   .contact-description {
+       height: 40em;
+       width: 20em;
+       p {
+           margin-top: 3em;
+           margin-bottom: 3em;
+           padding: 0;
+       }
+       div {
+           flex-direction: column;
+       }
+   }
 /* -------------------------------------------------
    --                   Footer                    --
    ------------------------------------------------*/
