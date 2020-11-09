@@ -281,16 +281,17 @@ main .style-button:hover {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-left: 3em;
-  width: 100vw;
+  width: 100em;
   margin-top: 6em;
 }
 
 .card-main .card-container .project-card {
   width: 22em;
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   z-index: 1;
 }
 
@@ -617,10 +618,46 @@ footer p {
    ------------------------------------------------*/
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 800px) {
   /* -------------------------------------------------
    --                Navigation Bar               --
    ------------------------------------------------*/
+  nav {
+    display: inline-block;
+    position: static;
+    width: 100%;
+    height: 1em;
+  }
+  nav .navbar-header {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    font-size: 2em;
+  }
+  nav .desktop-header {
+    display: none;
+  }
+  nav .navbar-ul {
+    display: none;
+    text-align: center;
+  }
+  nav .navbar-ul li {
+    border-bottom: 1px solid green;
+  }
+  nav .navbar-ul > li > a {
+    text-decoration: none;
+    color: black;
+    line-height: 3em;
+  }
+  nav .navbar-ul > li > a span {
+    display: block;
+  }
+  nav button {
+    display: none;
+  }
+  nav #expand-toggle:checked ~ .navbar-ul {
+    display: block;
+  }
   /* -------------------------------------------------
    --      Main Section of Landing Page           --
    ------------------------------------------------*/
@@ -630,6 +667,26 @@ footer p {
   /* -------------------------------------------------
    --                Projects Main                --
    ------------------------------------------------*/
+  #project-background {
+    width: 100vw;
+    height: 135em;
+  }
+  .card-main .description-container p {
+    padding: 0 2em 0 2em;
+  }
+  .card-main .card-container {
+    width: 40em;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-main .card-container .project-card {
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
   /* -------------------------------------------------
    --                Blog Main                --
    ------------------------------------------------*/
@@ -639,6 +696,38 @@ footer p {
   /* -------------------------------------------------
    --                   Footer                    --
    ------------------------------------------------*/
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-ul-1 {
+    display: none;
+  }
+  footer .footer-ul-2 {
+    display: none;
+  }
+  footer .footer-line {
+    display: none;
+  }
+  footer .social-media-icons {
+    width: 20em;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .social-media-icons .fa {
+    width: 2.5em;
+    height: 2em;
+    line-height: 2em;
+  }
 }
 
 @media only screen and (max-width: 768px) {
