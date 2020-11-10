@@ -30,4 +30,6 @@ The targeted audience for my portfolio include employers, developers and collegu
 ## Tech Stack
 The tech stack used include:
 + ![Html](images\html5.png)
-![Css](images\css.png)
++ ![Css](images\css.png)
++ ![animate.css]()
++ ![Sass]()
