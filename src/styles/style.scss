@@ -175,6 +175,7 @@ main {
     p{
         font-family: $textfont;
     }
+
     .style-button {
         margin: 1em 0 0 0;
         background-color: #df622c;
@@ -199,8 +200,6 @@ main {
     }
 
 }
-
-
 /* -------------------------------------------------
    --                About Me Main                --
    ------------------------------------------------*/
@@ -243,9 +242,13 @@ main {
         margin-right: 3em;
         padding-left: 2em;
         h2 {
-            text-align: center;
+            text-align: left;
             font-family: $headfont;
             padding-top: 1em;
+        }
+        .test {
+            display: flex;
+            width: 15em;
         }
     }
 }
@@ -376,11 +379,11 @@ main {
             align-self: center;
         }
     }
-    .test {
-        a {
-            line-height: 3em;
-            margin-bottom: .7em;
-        }
+}
+.test {
+    a {
+        line-height: 3em;
+        margin-bottom: .7em;
     }
 }
 

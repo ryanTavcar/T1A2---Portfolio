@@ -323,9 +323,16 @@ main .style-button:hover {
 }
 
 #main-about-container .about-container h2 {
-  text-align: center;
+  text-align: left;
   font-family: "Russo One", sans-serif;
   padding-top: 1em;
+}
+
+#main-about-container .about-container .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15em;
 }
 
 /* -------------------------------------------------
@@ -517,7 +524,7 @@ main .style-button:hover {
       align-self: center;
 }
 
-.contact-description .test a {
+.test a {
   line-height: 3em;
   margin-bottom: .7em;
 }

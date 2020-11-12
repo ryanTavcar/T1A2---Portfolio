@@ -1,0 +1,251 @@
+commit 13591dd8d8f5be163349229f2229ee3f1c1da8f7
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Wed Nov 11 13:02:25 2020 +1100
+
+    Added animate.css to projects and blog
+
+commit 233e645cadf834e78de875fa56a74ec789779d81
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Wed Nov 11 12:36:47 2020 +1100
+
+    Add pdf file of my resume to be downloaded on click
+
+commit 22815c0b1d733795da5204442987a9c15b6397b9
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Wed Nov 11 09:48:10 2020 +1100
+
+    Added Navbar link styling with ::before & :after.
+
+commit fa61f7c77ff1e8bf7a6c0b4f681c6b062a1beaeb
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Tue Nov 10 07:51:02 2020 +1100
+
+    Merged viewport branch with branch branch
+
+commit b12a7a0e1e81230844597d68418054e5acfe7c87
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Tue Nov 10 07:46:30 2020 +1100
+
+    Update of styling
+
+commit 6ea12ebed2ebb6ad474be25c49d601702b189cb6
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 9 19:57:40 2020 +1100
+
+    finess the stylesheet.
+
+commit 5fc935d93b729aa33ca437ddab20495707152f6a
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 9 19:27:25 2020 +1100
+
+    Finessed mobile navbar and footer.
+
+commit 4a667be279e81d29a3f5e616edb23c2f349f6ba0
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 9 17:19:18 2020 +1100
+
+    worked on updating media queries.
+
+commit 370cc9bbea2664b288af7d159a2420137c2d0e5f
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Fri Nov 6 16:57:18 2020 +1100
+
+    Added hamburger menu for mobile.
+
+commit b6e934a7a1295a1dbb5f122f01305ced5bc0f8fe
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Fri Nov 6 07:56:15 2020 +1100
+
+    Now starts the task of adding media queries *sigh*
+
+commit 278991cbd55b4b233773f6e630c96b9d124c151d
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Thu Nov 5 19:04:08 2020 +1100
+
+    Added background to about page and blog page.
+
+commit 748a2f8877b3620b141badceb1a61d882cd1ecc5
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Thu Nov 5 14:38:15 2020 +1100
+
+    Added text overlay to blog page.
+
+commit 97e9e96687857927403d67c33f5129844381fc27
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Thu Nov 5 14:33:45 2020 +1100
+
+    Added text overlay to projects page.
+
+commit 469f2cdab2f6c74fbe794725ff9630465b110f2e
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Thu Nov 5 11:58:17 2020 +1100
+
+    Added favion... although having issues with displaying favicon on opera webbrowser
+
+commit 8a5a3bbd0556e37709294e0f408a9e876ceeca1c
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Thu Nov 5 10:57:58 2020 +1100
+
+    Added animation to contact page
+
+commit 73d964d6a6b868eef34c73a6ce24acb87a7bfd42
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Thu Nov 5 10:54:47 2020 +1100
+
+    Added animation with animate.css to main content of landing page and about page
+
+commit d57f5a2847346a1cae5ef30e7185496cfbb87138
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Wed Nov 4 21:46:02 2020 +1100
+
+    Had a major bug issue. Had to revalue most units in scss. For some reason all components/sections shrunk :(
+
+commit 078bf04bcd419925e1972f861cc48421d8dd2c4d
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Wed Nov 4 13:02:33 2020 +1100
+
+    Replaced project image placeholder.
+
+commit 7032fe83439931b561fb2a62e9a37f5bc14c782b
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Wed Nov 4 11:46:49 2020 +1100
+
+    Added colorful background for all webpages.
+
+commit 11a81d8a9792ddbb26e6b8cc80053ef32fe69254
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Wed Nov 4 11:17:04 2020 +1100
+
+    Organized scss indexing.
+
+commit b917e6de26181e48469af8743aba3d7b432497d5
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Wed Nov 4 08:46:32 2020 +1100
+
+    Added social media icons to footer
+
+commit fdfc55ef1f31fda5338ebe6048897ded0d031488
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Tue Nov 3 21:23:59 2020 +1100
+
+    Changed of landing page heading and colour of button.
+
+commit e986a0b02e716983cefd6461a6f77849565e5f65
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Tue Nov 3 21:18:05 2020 +1100
+
+    created new branch. added background image to body.
+
+commit 0a2c4753724d2469294439cc482812a03d1f5ae5
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Tue Nov 3 11:13:29 2020 +1100
+
+    Stylized blog page and fixed "get in touch" button link
+
+commit dd4bad00e2fd0736cbc61b1190447233da2d4339
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Tue Nov 3 10:40:18 2020 +1100
+
+    Stylized about page and projects page.
+
+commit 5b9ee24bb24b1e16fe7844ae7ac3c5b1b7dfad5d
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Tue Nov 3 08:29:51 2020 +1100
+
+    add russo one font and open sans font
+
+commit 3527d3d21787dff3ecaf8dfd3046978b03b371bd
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Tue Nov 3 08:01:11 2020 +1100
+
+    Tidied up scss files and html files.
+
+commit 6ff088f9d8ecc1fb2075874e3f916ac801d26f7a
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Tue Nov 3 07:46:23 2020 +1100
+
+    Added sass to the website
+
+commit 4eded1cf06a7f3120f8f5b35bd889657c6bf1442
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Tue Nov 3 07:28:25 2020 +1100
+
+    Added normailize.css
+
+commit 40d1c5e9d048e4cfc79176a7378054de14f6445d
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 2 18:47:50 2020 +1100
+
+    Fixed footer and navigation bar markdown to be compatible with style.css
+
+commit 83595af4f29162dd24781f47b7af77bd0d37a563
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 2 18:45:36 2020 +1100
+
+    Styled Footer for all portfolio files
+
+commit b8cfaa9fde0d9615cde3e579c25df2abfbd4d5ae
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 2 17:48:26 2020 +1100
+
+    formatted the main section of the landing page.
+
+commit 287c7b2d6d4f420af569f56f308a0f630c8d92e4
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 2 17:14:04 2020 +1100
+
+    Initalized the desktop navigation bar that wil be used across the webpages.
+
+commit b8441578075ff03dcdb80afd181b8375c3884778
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 2 13:04:46 2020 +1100
+
+    fixed html styling across all html files.
+
+commit c9685228d388153c096751f6210b1a11638876c5
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 2 13:00:55 2020 +1100
+
+    Added call to action on contact.html
+
+commit 43f3cae4892c0e232d7039e5d7aa5636308a7187
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 2 12:48:47 2020 +1100
+
+    Added main content to blog.html and set up the blog cards.
+
+commit 0dd2970f243edf488f278d0583f096711ab65ab7
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 2 12:34:47 2020 +1100
+
+    Add main content to projects.html and set up the projects cards.
+
+commit 396bfc85083bab2ee8a4c991a15ae7bf9b14206f
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 2 12:16:36 2020 +1100
+
+    Set up all content for the "about me"  webpage
+
+commit 4e0a341ca07421f83c2c36e1246834e624163907
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 2 11:51:26 2020 +1100
+
+    Initalized all footer links and placed them in appropriate order depending on what webpage is being viewed.
+
+commit fbba1d9ec655fcdc327863b014d026eb38fb8170
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 2 11:37:09 2020 +1100
+
+    Transferred the footer across all files.
+
+commit a397b024c1f7d30929784446bc5bc50b8dea35f7
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 2 11:34:49 2020 +1100
+
+    Set up all the content for index.html
+
+commit fcaa6555ccd8f59fdf47cbaeaa74252363b80a3e
+Author: [Ryan Tavcar] <[Ryan.Tavcar@gmail.com]>
+Date:   Mon Nov 2 11:14:05 2020 +1100
+
+    Set up navbar across all html files.
