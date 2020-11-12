@@ -244,20 +244,26 @@ main {
         justify-content: center;
         align-items: center;
         margin-right: 3em;
-        padding-left: 2em;
+        padding: 3em;
         h2 {
             text-align: left;
             font-family: $headfont;
             padding-top: 1em;
             color: #ffffffd7;
+            font-size: 2em;
         }
         p {
             color: #ffffffd7;
             font-size: 1.2em;
             font-weight: bold;
+            line-height: 1.5em;
         }
         .test {
-            width: 15em;
+            display: flex;
+            .style-button{
+                width: 15em;
+                background-color: #109553;
+            }
         }
     }
 }
@@ -288,6 +294,7 @@ main {
         }
         p{
             color: #ffffffd7;
+            font-weight: bold;
         }
         .style-button {
             align-self: center;
@@ -306,6 +313,7 @@ main {
             width: 22em;
             position: relative;
             z-index: 1;
+            margin-bottom: 1em;
             img {
                 position: relative;
                 width: 350px;
@@ -477,7 +485,7 @@ footer {
         justify-self: center;
         align-self: center;
         height:1px;
-        width:70em;
+        width:80em;
         margin: 0 8em 0 8em;
         grid-row: 2 ;
         grid-column: 1 /  4;

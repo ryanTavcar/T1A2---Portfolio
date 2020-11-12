@@ -329,7 +329,7 @@ main .style-button:hover {
   width: 45em;
   height: 40em;
   padding-right: 1em;
-  background-color: rgba(223, 98, 44, 0.9);
+  background-color: rgba(223, 98, 44, 0.8);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -337,7 +337,7 @@ main .style-button:hover {
       -ms-flex-align: center;
           align-items: center;
   margin-right: 3em;
-  padding-left: 2em;
+  padding: 3em;
 }
 
 #main-about-container .about-container h2 {
@@ -345,16 +345,25 @@ main .style-button:hover {
   font-family: "Russo One", sans-serif;
   padding-top: 1em;
   color: #000000;
+  font-size: 2em;
 }
 
 #main-about-container .about-container p {
   color: #000000;
   font-size: 1.2em;
   font-weight: bold;
+  line-height: 1.5em;
 }
 
 #main-about-container .about-container .test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#main-about-container .about-container .test .style-button {
   width: 15em;
+  background-color: #109553;
 }
 
 /* -------------------------------------------------
@@ -396,6 +405,7 @@ main .style-button:hover {
 
 .card-main .description-container p {
   color: #000000;
+  font-weight: bold;
 }
 
 .card-main .description-container .style-button {
@@ -426,6 +436,7 @@ main .style-button:hover {
   width: 22em;
   position: relative;
   z-index: 1;
+  margin-bottom: 1em;
 }
 
 .card-main .card-container .project-card img {
@@ -674,7 +685,7 @@ footer .footer-line {
       -ms-grid-row-align: center;
       align-self: center;
   height: 1px;
-  width: 70em;
+  width: 80em;
   margin: 0 8em 0 8em;
   -ms-grid-row: 2;
   grid-row: 2;
