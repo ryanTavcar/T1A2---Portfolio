@@ -9,14 +9,14 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-color: #fdfffd;
-  -webkit-filter: brightness(1) contrast(1);
-          filter: brightness(1) contrast(1);
+  background-color: #152028;
+  -webkit-filter: brightness(0.8) contrast(1.2);
+          filter: brightness(0.8) contrast(1.2);
   overflow-x: hidden;
 }
 
 .dark_light_theme {
-  background-color: #ebe5e5;
+  background-color: #383636;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,7 +35,7 @@ body {
 
 .dark_light_theme .theme_link {
   font-size: 4em;
-  color: black;
+  color: whitesmoke;
 }
 
 .dark_light_theme .expand_theme {
@@ -74,12 +74,12 @@ nav .desktop-header {
   width: -moz-fit-content;
   width: fit-content;
   font-family: "Russo One", sans-serif;
-  color: #000000;
+  color: #ffffffd7;
 }
 
 nav .navbar-header {
   display: none;
-  color: #000000;
+  color: #ffffffd7;
 }
 
 nav #expand-toggle {
@@ -104,7 +104,6 @@ nav .navbar-ul {
   margin: 0;
   list-style: none;
   font-family: "Open Sans", sans-serif;
-  background-color: #ffffff;
 }
 
 nav .nav-styling {
@@ -115,12 +114,12 @@ nav .navbar-ul > li > a {
   text-decoration: none;
   color: black;
   padding: .55em;
-  color: #000000;
+  color: #ffffffd7;
 }
 
 nav .navbar-ul > li > a span {
   display: none;
-  color: #000000;
+  color: #ffffffd7;
 }
 
 nav .nav-styling::before {
@@ -344,11 +343,11 @@ main .style-button:hover {
   text-align: left;
   font-family: "Russo One", sans-serif;
   padding-top: 1em;
-  color: #000000;
+  color: #ffffffd7;
 }
 
 #main-about-container .about-container p {
-  color: #000000;
+  color: #ffffffd7;
   font-size: 1.2em;
   font-weight: bold;
 }
@@ -391,11 +390,11 @@ main .style-button:hover {
 .card-main .description-container h2 {
   text-align: center;
   font-family: "Russo One", sans-serif;
-  color: #000000;
+  color: #ffffffd7;
 }
 
 .card-main .description-container p {
-  color: #000000;
+  color: #ffffffd7;
 }
 
 .card-main .description-container .style-button {
@@ -596,7 +595,7 @@ footer .footer-ul-1 {
 }
 
 footer .footer-ul-1 li a {
-  color: #000000;
+  color: #ffffffd7;
 }
 
 footer .social-media-icons {
@@ -662,12 +661,12 @@ footer .footer-ul-2 {
 }
 
 footer .footer-ul-2 li a {
-  color: #000000;
+  color: #ffffffd7;
 }
 
 footer .footer-line {
-  border: 0 solid black;
-  background-color: black;
+  border: 0 solid #ffffffd7;
+  background-color: #ffffffd7;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -684,7 +683,7 @@ footer .footer-line {
 }
 
 footer a {
-  color: black;
+  color: #ffffffd7;
   text-decoration: none;
 }
 
@@ -699,6 +698,7 @@ footer p {
       -ms-grid-row-align: center;
       align-self: center;
   font-family: "Open Sans", sans-serif;
+  color: #ffffffd7;
 }
 
 /* -------------------------------------------------
@@ -969,4 +969,4 @@ footer p {
        --                   Footer                    --
        ------------------------------------------------*/
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=dark_theme.css.map */
