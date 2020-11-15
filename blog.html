@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png"> 
+    <link rel="manifest" href="favicon.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
+    <!--CDN + API-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/dark_theme.css" integrity="sha384-4VceP6T1a7gXIhp6AYQfmRKwgVBJvEBSQoF16hTh8V7sd2hNSwaDSWZ7Zsel49Tn" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css"id="theme-link" integrity="sha384-f8RhzXjm91+hS1UKRg7S+reh9keecTvMeilpU2Ydx8WYaetl/gZSJftHp1NXEuef" 
+    crossorigin="anonymous">
+    <title>Ryan James | Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <h3 class="desktop-header">RYAN JAMES</h3>
+        <!--For Mobile/Tablet nav-heading-->
+        <label for="expand-toggle" class="navbar-header">&#9776;</h3></label>
+        <input type="checkbox" id="expand-toggle" />
+        
+        <ul class="navbar-ul">
+            <li class="nav-styling a"><a href="index.html">Home</a></li>
+            <li class="nav-styling b"><a href="about.html">About</a></li>
+            <li class="nav-styling c"><a href="projects.html">Projects</a></li>
+            <li class="nav-styling d"><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html"><span>Contact</span></a></li>
+        </ul> 
+        <button class="navbutton" onclick="window.location.href='contact.html'">Get In Touch</button>
+    </nav>
+
+    <main id="card-main" class="card-main blog-background">
+        <section class="description-container animate__animated animate__slideInLeft">
+            <h2>Blog</h2>
+            <p>Check out my blogs! You'll find entries about my journey learning css </p>
+        </section>
+
+        <section class="card-container animate__animated animate__slideInLeft" >
+            <article class="project-card">
+                <img class="blog_image" src="../src/images/blog1_pic.jpg" alt="placeholder">
+                <a href="Blogs/blog1.html" target="_blank">
+                    <div class="image_overlay">
+                        <div class="image_title">Blog 1</div>
+                    </div>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="project-card">
+                <img class="blog_image" src="../src/images/blog2_pic.jpg" alt="placeholder">
+                <a href="Blogs/blog2.html" target="_blank">
+                    <div class="image_overlay">
+                        <div class="image_title">Blog 2</div>
+                    </div>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            
+            <article class="project-card">
+                <img class="blog_image" src="../src/images/blog3_pic.jpg" alt="placeholder">
+                <a href="Blogs/blog3.html" target="_blank">
+                    <div class="image_overlay">
+                        <div class="image_title">Blog 3</div>
+                    </div>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            
+            <article class="project-card">
+                <img class="blog_image" src="../src/images/blog4_pic.jpg" alt="placeholder">
+                <a href="Blogs/blog4.html" target="_blank">
+                    <div class="image_overlay">
+                        <div class="image_title">Blog 4</div>
+                    </div>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="project-card">
+                <img class="blog_image" src="../src/images/blog5_pic.jpg" alt="placeholder">
+                <a href="Blogs/blog5.html" target="_blank">
+                    <div class="image_overlay">
+                        <div class="image_title">Blog 5</div>
+                    </div>
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+        </section>
+        <!--Light and fark theme toggle-->
+        <div class="dark_light_theme">
+            <label for="expand_theme" class="theme_link">&#9728;</label>
+            <input type="checkbox" class="expand_theme" />
+        </div>
+
+    </main>
+</body>
+
+<footer>
+    <ul class="footer-ul-1">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+    </ul>
+
+    <div class="social-media-icons">
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="https://github.com/ryanTavcar" target="_blank" class="fa fa-github"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        
+    </div>
+
+    <ul class="footer-ul-2">
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="footer-line"></div>
+    <p>&copy; 2020</p>
+</footer>
+<script src="main.js" integrity="sha384-rE5Sqr+TfyFYJTZEBzQorg0lh4w0vNa18FN3ps9unv2BiXK668wHbzG2s5Xf3GxE" 
+crossorigin="anonymous"></script>
+</html>

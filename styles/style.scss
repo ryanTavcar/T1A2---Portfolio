@@ -1,0 +1,901 @@
+$textfont: 'Open Sans', sans-serif;
+$headfont: 'Russo One', sans-serif;
+
+:root {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #fdfffd;
+    filter: brightness(1) contrast(1);
+    overflow-x: hidden;
+}
+.dark_light_theme {
+    background-color: rgb(235, 229, 229);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 94em;
+    bottom: 49em;
+    width: 6em;
+    height: 4em;
+    .theme_link {
+        font-size: 4em;
+        color: rgb(0, 0, 0);
+    }
+    .expand_theme {
+        width: 2em;
+        height: 2em;
+    }
+}
+/* -------------------------------------------------
+   --                Navigation Bar               --
+   ------------------------------------------------*/
+nav {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 45% 1fr;
+    grid-template-rows: 3rem;
+    height: 3rem;
+    margin-top: .2rem;
+    position: static;
+    .desktop-header {
+        align-self: center;
+        height: fit-content;
+        width: 20%;
+        margin: 0;
+        padding-left: 1.5em;
+        display: inline;
+        width: fit-content;
+        font-family: $headfont;
+        color: #000000;
+    }
+    .navbar-header{
+        display: none;
+        color: #000000;
+    }
+    #expand-toggle {
+        display: none;
+    }
+    .navbar-ul  {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-family: $textfont;
+        background-color: #ffffff;
+    }
+    .nav-styling{
+        width: 0em;
+    }
+    .navbar-ul > li > a {
+        text-decoration: none;
+        color: black;
+        padding: .55em;
+        color: #000000;
+        span{
+            display: none;
+            color: #000000;
+        }    
+    }
+    .nav-styling::before {
+        content: " ";
+        position: relative;
+        top: .5em;
+        bottom: .5em;
+        box-shadow:  0 0 0 0 #F07C41 inset;
+        display: inline-block;
+        width: 5em;
+        height: .5em;
+        opacity: 0;
+        -webkit-transition: box-shadow .5s linear;
+        transition: box-shadow .5s linear;
+    }
+    .nav-styling:hover::before {
+        opacity: 1;
+        box-shadow:  1px 1px 1px 0 #F07C41 inset;
+    }
+    .nav-styling::after {
+        content: " ";
+        position: relative;
+        bottom: .5em;
+        opacity: 0;
+        box-shadow:  0 0 0 0 #F07C41 inset;
+        display: inline-block;
+        width: 5em;
+        height: .5em;
+        -webkit-transition: box-shadow .3s linear;
+        transition: box-shadow .3s linear;
+    }
+    .nav-styling:hover::after {
+        opacity: 1;
+        box-shadow:  -1px -1px 1px 0 #F07C41 inset;
+    }
+
+    .a:hover:before {right:.5em}
+    .a:hover::after {right:.5em}
+    .b:hover::before {right:.5em}
+    .b:hover::after {right:.5em}
+    .d:hover::before {right:.8em}
+    .d:hover::after {right:.8em}
+
+    .navbutton {
+        align-self: center;
+        justify-self: end;
+        height: 45px;
+        width: 160px;
+        background-color: #F07C41;
+        border: none;
+        color: #fff;
+        border-radius: 0.3em;
+        padding: 0.5em;
+        margin-right: 1.2em;
+        font-family: $textfont; 
+        box-shadow: inset 0 0 0 0 #ffffff;
+        transition: ease-out 0.3s;
+    }
+    .navbutton:hover {
+        cursor: pointer;
+        box-shadow: inset 280px 0 0 0 #ffffff;
+        color: #000000;
+        border: 2px solid #000000;
+    }
+
+}
+/* -------------------------------------------------
+   --      Main Section of Landing Page           --
+   ------------------------------------------------*/
+#background-image {
+    background-image: url('../images/campsite.png');
+    background-color: #053c21;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+main {
+    position: static;
+    height: 100vh;
+    width: 100vw;
+    margin-top: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        align-items: flex-start;
+        position: absolute;
+        top: 8em;
+        left: 7em;
+    }
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 0;
+        font-family: $headfont;
+    }
+    p{
+        font-family: $textfont;
+    }
+    .style-button {
+        margin: 1em 0 0 0;
+        background-color: #df622c;
+        border: none;
+        color: #FFFFFF;
+        border-radius: 0.3em;
+        margin-right: .5em;
+        width: 280px;
+        height: 3em;
+        font-family: $textfont;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: inset 0 0 0 0 #ffffff;
+        transition: ease-out 0.3s;
+    }
+    .style-button:hover {
+        cursor: pointer;
+        box-shadow: inset 280px 0 0 0 #ffffff;
+        color: #000000;
+        border: 2px solid #000000;
+    }
+}
+/* -------------------------------------------------
+   --                About Me Main                --
+   ------------------------------------------------*/
+#about-background {
+    background-color:rgba(16, 149, 83, .9);
+    width: 100vw;
+    height: 100vh;
+    position: static;
+}
+#main-about-container {
+    display: flex;
+    .about-container {
+        width: 45em;
+        height: 40em;
+        padding-right: 1em;
+        background-color: rgba(223, 98, 44, 0.8);
+        justify-content: center;
+        align-items: center;
+        margin-right: 3em;
+        padding: 3em;
+        h2 {
+            text-align: left;
+            font-family: $headfont;
+            padding-top: 1em;
+            color: #000000;
+            font-size: 2em;
+        }
+        p {
+            color: #000000;
+            font-size: 1.2em;
+            font-weight: bold;
+            line-height: 1.5em;
+        }
+    }
+    img {
+        height: 735px;
+        width: 600px;
+    }
+}
+/* -------------------------------------------------
+   --                Projects Main                --
+   ------------------------------------------------*/
+#project-background {
+    width: 100vw;
+    height: 53em;
+    background-color:rgba(130, 208, 218, .9);
+}
+.card-main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    .description-container {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        h2 {
+            text-align: center;
+            font-family: $headfont;
+            color: #000000;
+        }
+        p{
+            color: #000000;
+            font-weight: bold;
+        }
+        .style-button {
+            align-self: center;
+        }
+    }
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: .5em;
+        width: 100em;
+        margin-top: 6em;
+        .project-card {
+            width: 22em;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 1em;
+            img {
+                position: relative;
+                width: 350px;
+                height: 350px;
+                cursor: pointer;
+            }
+            .image_overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.6);
+                color: #ffffff;
+                font-family: $headfont;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.25s;
+            }
+            .image_overlay > * {
+                transform: translateY(20px);
+                transition: transform 0.25s;
+            }
+            .image_overlay:hover{
+                opacity: 1; 
+            }
+            .image_overlay:hover > * {
+                transform: translateY(-40px); 
+            }
+            .image_title {
+                font-size: 2em;
+                font-weight: bold;
+            }
+        }
+    }
+}
+/* -------------------------------------------------
+   --                Blog Main                --
+   ------------------------------------------------*/
+.blog-background {
+    background-color:rgba(240, 124, 65, .9);
+    width: 100vw;
+    height: 75em;
+}
+.blog_image {
+    width: 350px;
+    height: 350px;
+}
+/* -------------------------------------------------
+   --                  CTA Main                   --
+   ------------------------------------------------*/
+#contact-background {
+    background-image: url('../images/fields.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #109652;
+    width: 100vw;
+    height: 100vh;
+    position: static;
+}
+.contact-description {
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    height: 50%;
+    h1 {
+        text-align: center;;
+    }
+    p {
+        padding: 1em 5em 1em 5em;
+    }
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        p{
+            padding: 0;
+            height: fit-content;
+            align-self: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    }
+}
+.button_div {
+    a {
+        line-height: 3em;
+        margin-bottom: .7em;
+    }
+}
+/* -------------------------------------------------
+   --                   Footer                    --
+   ------------------------------------------------*/
+footer {
+    display: grid;
+    width: 100vw;
+    margin-top: 1rem;
+    margin-bottom: 2em;
+    grid-template-columns: 1fr 25% 1fr ;
+    grid-template-rows: 3em 2em 1em;
+    height: 5rem;
+    position: fixed;
+    .footer-ul-1 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0 0 0 10em;
+        margin: 0;
+        list-style: none;
+        font-family: $textfont;
+        li a {
+            color:  #000000;
+        }
+    }
+    .social-media-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-self: center;
+        .fa {
+            padding:.2em;
+            font-size: 1.5em;
+            width: 1.5em;
+            text-align: center;
+            text-decoration: none;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+        .fa-github {
+            background: #000000;
+            color: #ffffff;
+        }
+    }
+    .footer-ul-2 {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 0 10em 0 0;
+        margin: 0;
+        list-style: none;
+        font-family: $textfont;
+        li a {
+            color:  #000000;
+        }
+    }
+    .footer-line {
+        border:0 solid black;
+        background-color: black;
+        justify-self: center;
+        align-self: center;
+        height:1px;
+        width:80em;
+        margin: 0 8em 0 8em;
+        grid-row: 2 ;
+        grid-column: 1 /  4;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+    }
+    p {
+        grid-column: 2;
+        grid-row: 3;
+        justify-self: center;
+        align-self: center;
+        font-family: $textfont;
+    }
+}
+/* -------------------------------------------------
+   --                Blog Entries                 --
+   ------------------------------------------------*/
+   .blog_entries {
+       width: 100vw;
+       height: 100vh;
+
+       aside {
+        width: 10vw;
+        height: 50vh;
+        text-align: center;
+       }
+       article {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: 100vh;
+        padding:1em 5em 0 5em;
+        h1{
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        img {
+            width: 500px;
+            height: 300px;
+            margin-top: 2em;
+            align-self: center;
+        }
+        p {
+            line-height: 1.5em;
+        }
+    }
+}
+
+/* -------------------------------------------------
+   --                Media Queries                --
+   ------------------------------------------------*/
+
+@media only screen and (max-width: 1440px) {
+
+/* -------------------------------------------------
+   --                About Me Main                --
+   ------------------------------------------------*/
+   #about-background {
+    background-size: 33em 33em;
+    background-position: 10% 150%;
+   }
+
+   #main-about-container{
+       .about-container{
+           width: 30em;
+           padding: 0 3em 3em 3em;
+       }
+       img {
+        height: 690px;
+        width: 600px;
+    }
+       
+   }
+/* -------------------------------------------------
+   --                Projects Main                --
+   ------------------------------------------------*/
+   #project-background  {
+       width: 100vw;
+       height: 80em;
+   }
+   .card-main {
+       
+       .card-container {
+            width: 70em;
+            justify-content: center;
+            align-items: center;
+            .project-card {
+                margin-right: 2em;
+            }
+        }  
+   }
+
+/* -------------------------------------------------
+   --                Blog Main                --
+   ------------------------------------------------*/
+   .blog-background {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #F07C41;
+        width: 100vw;
+        height: 100em;
+    }
+/* -------------------------------------------------
+   --                  CTA Main                   --
+   ------------------------------------------------*/
+   #contact-background {
+       height: 90vh;
+   }
+
+@media only screen and (max-width: 800px) {
+/* -------------------------------------------------
+   --                Navigation Bar               --
+   ------------------------------------------------*/
+   nav{
+    display: inline-block;
+    position: static;
+    width: 100%;
+    height: 1em;
+    .navbar-header {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        font-size: 2em;
+        margin-left: .2em;
+    }
+    .desktop-header {
+        display: none;
+    }
+    .navbar-ul {
+        display: none;
+
+    }
+    .navbar-ul>li {
+        border-bottom: 1px solid green;
+        width: 100vw;
+        //height: 2em;
+        line-height: 4em;
+
+    }
+    .navbar-ul > li > a {
+        text-decoration: none;
+        color: black;
+        line-height: 3em;
+        
+        span{
+            display: inline-block;
+        }
+    }
+    button {
+        display: none;
+    }
+    #expand-toggle:checked ~ .navbar-ul {
+        display: block;
+    }
+    .nav-styling::before{display: none;}
+    .nav-styling::after{display: none;}
+}
+/* -------------------------------------------------
+   --                About Me Main                --
+   ------------------------------------------------*/
+   #about-background {
+       height: 85vh;
+       border: 4px solid purple;
+   }
+   #main-about-container {
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 0;
+       width: 30em;
+       .about-container {
+           margin-bottom: 3em;
+           width:27em;
+           height: fit-content;
+       }
+       img {
+           width: 33em;
+           height: 20em;
+       }
+   }
+/* -------------------------------------------------
+   --                Projects Main                --
+   ------------------------------------------------*/
+   #project-background  {
+    width: 100vw;
+    height: 135em;
+    }
+    .card-main {
+        .description-container{
+            p{
+                padding: 0 2em 0 2em;
+            }
+        }
+        .card-container {
+            width: 40em;
+            .project-card {
+                margin-right: 0;
+                margin-bottom: 2em;
+            }
+        }  
+    }
+/* -------------------------------------------------
+   --                Blog Main                --
+   ------------------------------------------------*/
+   .blog-background {
+    height: 160em;
+   }
+/* -------------------------------------------------
+   --                  CTA Main                   --
+   ------------------------------------------------*/
+   .contact-description {
+       height: 40em;
+       width: 20em;
+       p {
+           margin-top: 3em;
+           margin-bottom: 3em;
+           padding: 0;
+       }
+       div {
+           flex-direction: column;
+       }
+   }
+/* -------------------------------------------------
+   --                   Footer                    --
+   ------------------------------------------------*/
+    footer {
+        display: flex;
+        flex-direction: column;
+
+        .footer-ul-1{
+            display: none;
+        }
+        .footer-ul-2 {
+            display: none;
+        }
+        .footer-line {
+            display: none;
+        }
+        .social-media-icons {
+            width: 20em;
+            justify-content: space-between;
+            align-items: center;
+            .fa {
+                width: 2.5em;
+                height: 2em;
+                line-height: 2em;
+                
+            }
+        }
+    }
+/* -------------------------------------------------
+   --                Blog Entries                 --
+   ------------------------------------------------*/
+.blog_entries {
+    width: 100vw;
+    height: 85em;
+
+    aside {
+
+     position: relative;
+     width: 10vw;
+     height: 85em;
+    }
+    article {
+
+     display: flex;
+     flex-direction: column;
+     width: 90vw;
+     height: 84em;
+     padding:1em 5em 0 5em;
+     h1{
+         text-align: center;
+         //margin-top: 2em;
+         margin-bottom: 1em;
+     }
+     img {
+         width: 500px;
+         height: 300px;
+         margin-top: 2em;
+         align-self: center;
+     }
+     p {
+         line-height: 1.5em;
+     }
+ }
+}   
+}
+
+@media only screen and (max-width: 768px) {
+
+    .dark_light_theme{
+        visibility: hidden;
+    }
+    /* -------------------------------------------------
+       --      Main Section of Landing Page           --
+       ------------------------------------------------*/
+    main {
+        height: 88vh;
+        .main-content {
+            width: 70vw;
+            left: 2em;
+        }
+    }    
+    /* -------------------------------------------------
+       --                About Me Main                --
+       ------------------------------------------------*/
+    #about-background {
+        height: 100vh;
+        width: 100vw;
+    }
+    #main-about-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        .about-container {
+            margin-bottom: 3em;
+            width:23em;
+            height: fit-content;
+        }
+        img {
+            width: 29em;
+            height: 20em;
+        }
+    }
+    /* -------------------------------------------------
+       --                Projects Main                --
+       ------------------------------------------------*/
+       #project-background  {
+        width: 100vw;
+        height: 135em;
+        }
+        .card-main {
+            .description-container{
+                width: 90vw;
+                p{
+                    padding: 0 2em 0 2em;
+                }
+            }
+            .card-container {
+                width: 90vw;
+                .project-card {
+                    margin-right: 0;
+                    margin-bottom: 2em;
+                }
+            }  
+        }
+/* -------------------------------------------------
+   --                Blog Entries                 --
+   ------------------------------------------------*/
+   .blog_entries {
+    width: 100vw;
+    height: 105em;
+    display: flex;
+    flex-direction: column;
+        aside {
+            position: relative;
+            width: 100vw;
+            height: 5em;
+            text-align: center;
+        }
+        article {
+            display: flex;
+            flex-direction: column;
+            width: 80vw;
+            height: 100em;
+            padding:1em 5em 0 5em;
+            h1{
+                text-align: center;
+                //margin-top: 2em;
+                margin-bottom: 1em;
+            }
+            img {
+                width: 500px;
+                height: 300px;
+                margin-top: 2em;
+                align-self: center;
+            }
+            p {
+                line-height: 1.5em;
+            }
+        }
+    } 
+}
+
+@media only screen and (max-width: 425px) {
+
+    /* -------------------------------------------------
+       --      Main Section of Landing Page           --
+       ------------------------------------------------*/
+    main {
+        height: 50em;
+        .main-content {
+            width: 70vw;
+            left: 2em;
+        }
+    }   
+    /* -------------------------------------------------
+       --                About Me Main                --
+       ------------------------------------------------*/
+    #about-background {
+        height: 100vh;
+        width: 100vw;
+    }
+    #main-about-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        .about-container {
+            margin-bottom: 3em;
+            width:15em;
+            height: fit-content;
+            margin-left: 4em;
+        }
+        img {
+            align-self: center;
+            width: 20em;
+            height: 20em;
+        }
+    }
+    /* -------------------------------------------------
+       --                  CTA Main                   --
+       ------------------------------------------------*/
+    #contact-background {
+        height: 100vh;
+    }
+       .contact-description {
+        width: 80vw;
+        height: fit-content;
+        p {
+            margin-top: 3em;
+            margin-bottom: 3em;
+            padding: 0;
+        }
+        div {
+            display: flex;
+            align-self: center;
+        }
+    }
+}
+}
