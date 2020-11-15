@@ -3,7 +3,7 @@
 
 This is my portfolio, made to display and demostrate my skills and understanding of web development and programming.
 
-[View the Website](ryantavcar.github.io/T1A2_Portfolio/)  
+[View the Website](https://ryantavcar.github.io/T1A2_Portfolio/)  
 
 [View the Repository](https://github.com/ryanTavcar/T1A2_Portfolio) 
 
