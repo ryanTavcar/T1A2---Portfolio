@@ -3,7 +3,9 @@
 
 This is my portfolio, made to display and demostrate my skills and understanding of web development and programming.
 
-[ryantavcar.github.io/t1a2_portfolio/](ryantavcar.github.io/t1a2_portfolio/)
+[View the Website](ryantavcar.github.io/t1a2_portfolio/)  
+
+[View the Repository](https://github.com/ryanTavcar/T1A2_Portfolio) 
 
 ## Table of Contents
 + [Functionality / Features](#functionality-/-features)
@@ -19,6 +21,15 @@ This portfolio is a multipage responsive website comprised of 5 pages, featuring
 + A Projects page
 + A Blog page
 + Contact page
+
+The site also features a list of components such as:
++ Navbar
++ Dark and light theme
++ Project / blog cards
++ footer
++ social media links
++ download cv link
++ animations
 
 ## Sitemap
 ![Sitemap - Portfolio](images\sitemap-portfolio.png)
