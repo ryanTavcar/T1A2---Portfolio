@@ -20,17 +20,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  left: 112em;
-  width: 4em;
-  height: 8em;
+  left: 94em;
+  bottom: 49em;
+  width: 6em;
+  height: 4em;
 }
 
 .dark_light_theme .theme_link {
@@ -354,15 +355,9 @@ main .style-button:hover {
   line-height: 1.5em;
 }
 
-#main-about-container .about-container .test {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#main-about-container .about-container .test .style-button {
-  width: 15em;
-  background-color: #109553;
+#main-about-container img {
+  height: 735px;
+  width: 600px;
 }
 
 /* -------------------------------------------------
@@ -563,7 +558,7 @@ main .style-button:hover {
   font-size: 1.2em;
 }
 
-.test a {
+.button_div a {
   line-height: 3em;
   margin-bottom: .7em;
 }
@@ -717,12 +712,6 @@ footer p {
    ------------------------------------------------*/
 @media only screen and (max-width: 1440px) {
   /* -------------------------------------------------
-   --                Navigation Bar               --
-   ------------------------------------------------*/
-  /* -------------------------------------------------
-   --      Main Section of Landing Page           --
-   ------------------------------------------------*/
-  /* -------------------------------------------------
    --                About Me Main                --
    ------------------------------------------------*/
   #about-background {
@@ -765,9 +754,6 @@ footer p {
   #contact-background {
     height: 90vh;
   }
-  /* -------------------------------------------------
-   --                   Footer                    --
-   ------------------------------------------------*/
 }
 
 @media only screen and (max-width: 800px) {
@@ -931,53 +917,5 @@ footer p {
     height: 2em;
     line-height: 2em;
   }
-}
-
-@media only screen and (max-width: 768px) {
-  /* -------------------------------------------------
-       --                Navigation Bar               --
-       ------------------------------------------------*/
-  /* -------------------------------------------------
-       --      Main Section of Landing Page           --
-       ------------------------------------------------*/
-  /* -------------------------------------------------
-       --                About Me Main                --
-       ------------------------------------------------*/
-  /* -------------------------------------------------
-       --                Projects Main                --
-       ------------------------------------------------*/
-  /* -------------------------------------------------
-       --                Blog Main                --
-       ------------------------------------------------*/
-  /* -------------------------------------------------
-       --                  CTA Main                   --
-       ------------------------------------------------*/
-  /* -------------------------------------------------
-       --                   Footer                    --
-       ------------------------------------------------*/
-}
-
-@media only screen and (max-width: 425px) {
-  /* -------------------------------------------------
-       --                Navigation Bar               --
-       ------------------------------------------------*/
-  /* -------------------------------------------------
-       --      Main Section of Landing Page           --
-       ------------------------------------------------*/
-  /* -------------------------------------------------
-       --                About Me Main                --
-       ------------------------------------------------*/
-  /* -------------------------------------------------
-       --                Projects Main                --
-       ------------------------------------------------*/
-  /* -------------------------------------------------
-       --                Blog Main                --
-       ------------------------------------------------*/
-  /* -------------------------------------------------
-       --                  CTA Main                   --
-       ------------------------------------------------*/
-  /* -------------------------------------------------
-       --                   Footer                    --
-       ------------------------------------------------*/
 }
 /*# sourceMappingURL=dark_theme.css.map */

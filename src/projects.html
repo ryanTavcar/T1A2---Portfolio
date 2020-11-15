@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
@@ -19,18 +20,24 @@
     <link rel="manifest" href="favicon.ico/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
+    <!--CDN + API-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/dark_theme.css">
-    <link rel="stylesheet" href="styles/style.css"id="theme-link">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="styles/normalize.css" integrity="sha512-igBRGs3D8KMG7RuZibzRGhv327gt4DNnhYusdMqFS9Vx85/nUZpLyHigPHSpEoKd4hn4CjWGeoNRYeM/TB3GWw==" 
+    crossorigin="anonymous>
+    <link rel="stylesheet" href="styles/dark_theme.css" integrity="sha512-igBRGs3D8KMG7RuZibzRGhv327gt4DNnhYusdMqFS9Vx85/nUZpLyHigPHSpEoKd4hn4CjWGeoNRYeM/TB3GWw==" 
+    crossorigin="anonymous>
+    <link rel="stylesheet" href="styles/style.css"id="theme-link" integrity="sha512-igBRGs3D8KMG7RuZibzRGhv327gt4DNnhYusdMqFS9Vx85/nUZpLyHigPHSpEoKd4hn4CjWGeoNRYeM/TB3GWw==" 
+    crossorigin="anonymous>
     <title>Ryan James | Portfolio</title>
 </head>
 
 <body>
     <nav>
         <h3 class="desktop-header">RYAN JAMES</h3>
+        <!--For Mobile/Tablet nav-heading-->
         <label for="expand-toggle" class="navbar-header">&#9776;</h3></label>
         <input type="checkbox" id="expand-toggle" />
 
@@ -45,14 +52,14 @@
     </nav>
 
     <main class="card-main" id="project-background">
-        <div class="description-container animate__animated animate__slideInLeft">
+        <section class="description-container animate__animated animate__slideInLeft">
             <h2>Projects</h2>
-            <p class="test">Take a look at my best projects / and if you are craving more, visit my socials.</p>
+            <p class="button_div">Take a look at my best projects / and if you are craving more, visit my socials.</p>
             <button class="style-button" onclick=" window.open('https://github.com/ryanTavcar','_blank')">View Github</button>
-        </div>
+        </section>
 
-        <div class="card-container animate__animated animate__slideInLeft">
-            <div class="project-card">
+        <section class="card-container animate__animated animate__slideInLeft">
+            <article class="project-card">
                 <img text="test" class="about-image" src="images/color-palette.png" alt="Palette Generator">
                     <a href="https://github.com/ryanTavcar/PaletteGenerator" target="_blank">
                         <div class="image_overlay">
@@ -60,8 +67,8 @@
                         </div>
                     </a>
                 <p>Color palette that generates a radom color based on your mouse position</p>
-            </div>
-            <div class="project-card">
+            </article>
+            <article class="project-card">
                 <img class="about-image" src="images/calculator.png" alt="Javascript Calculator">
                 <a href="https://github.com/ryanTavcar/Javascript-Calculator" target="_blank">
                     <div class="image_overlay">
@@ -69,9 +76,9 @@
                     </div>
                 </a>
                 <p>A basic javascript calculator.</p>
-            </div>
+            </article>
             
-            <div class="project-card">
+            <article class="project-card">
                 <img class="about-image" src="images/survey-form.png" alt="Survey Form">
                 <a href="https://github.com/ryanTavcar/Survey-Form" target="_blank">
                     <div class="image_overlay">
@@ -79,9 +86,9 @@
                     </div>
                 </a>
                 <p>A Survey form that tested my skills with html and css.</p>
-            </div>
+            </article>
             
-            <div class="project-card">
+            <article class="project-card">
                 <img class="about-image" src="images/picture-frame.png" alt="Picture Frame">
                 <a href="https://github.com/ryanTavcar/CSS-Picture-Frame" target="_blank">
                     <div class="image_overlay">
@@ -89,12 +96,14 @@
                     </div>
                 </a>
                 <p>A picture frame of a landscape setting, using CSS.</p>
-            </div>
-        </div>
+            </article>
+        </section>
+        <!--Light and fark theme toggle-->
         <div class="dark_light_theme">
             <label for="expand_theme" class="theme_link">&#9728;</label>
             <input type="checkbox" class="expand_theme" />
         </div>
+
     </main>
 </body>
 
@@ -118,5 +127,6 @@
     <div class="footer-line"></div>
     <p>&copy; 2020</p>
 </footer>
-<script src="main.js"></script>
+<script src="main.js" integrity="sha512-igBRGs3D8KMG7RuZibzRGhv327gt4DNnhYusdMqFS9Vx85/nUZpLyHigPHSpEoKd4hn4CjWGeoNRYeM/TB3GWw==" 
+crossorigin="anonymous></script>
 </html>

@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
@@ -20,18 +22,24 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!--CDN + API-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/dark_theme.css">
-    <link rel="stylesheet" href="styles/style.css"id="theme-link">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="styles/normalize.css" integrity="sha512-igBRGs3D8KMG7RuZibzRGhv327gt4DNnhYusdMqFS9Vx85/nUZpLyHigPHSpEoKd4hn4CjWGeoNRYeM/TB3GWw==" 
+    crossorigin="anonymous>
+    <link rel="stylesheet" href="styles/dark_theme.css" integrity="sha512-igBRGs3D8KMG7RuZibzRGhv327gt4DNnhYusdMqFS9Vx85/nUZpLyHigPHSpEoKd4hn4CjWGeoNRYeM/TB3GWw==" 
+    crossorigin="anonymous>
+    <link rel="stylesheet" href="styles/style.css"id="theme-link" integrity="sha512-igBRGs3D8KMG7RuZibzRGhv327gt4DNnhYusdMqFS9Vx85/nUZpLyHigPHSpEoKd4hn4CjWGeoNRYeM/TB3GWw==" 
+    crossorigin="anonymous>
     <title>Ryan James | Portfolio</title>
 </head>
 
 <body>
     <nav>
         <h3 class="desktop-header">RYAN JAMES</h3>
+        <!--For Mobile/Tablet nav-heading-->
         <label for="expand-toggle" class="navbar-header">&#9776;</label>
         <input type="checkbox" id="expand-toggle" />
 
@@ -46,11 +54,12 @@
     </nav>
     
     <main id="background-image">        
-        <div class="main-content animate__animated animate__bounceInDown" >
+        <section class="main-content animate__animated animate__bounceInDown" >
             <h1>Hey! Since Your Already Here,<br> Take A Browse!</h1>
             <p>Web Developer / Specialising in Fronted. <br> I want to make things that make a difference</p>
             <button onclick="window.location.href='projects.html'" class="style-button">View Projects</button>
-        </div>
+        </section>
+        <!--Light and fark theme toggle-->
         <div class="dark_light_theme">
             <label for="expand_theme" class="theme_link">&#9728;</label>
             <input type="checkbox" class="expand_theme" />
@@ -78,5 +87,6 @@
     <div class="footer-line"></div>
     <p>&copy; 2020</p>
 </footer>
-<script src="main.js"></script>
+<script src="main.js" integrity="sha512-igBRGs3D8KMG7RuZibzRGhv327gt4DNnhYusdMqFS9Vx85/nUZpLyHigPHSpEoKd4hn4CjWGeoNRYeM/TB3GWw==" 
+crossorigin="anonymous></script>
 </html>

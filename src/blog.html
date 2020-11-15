@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon.ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon.ico/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicon.ico/apple-icon-72x72.png">
@@ -19,21 +20,27 @@
     <link rel="manifest" href="favicon.ico/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="favicon.ico/ms-icon-144x144.png">
+    <!--CDN + API-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/dark_theme.css">
-    <link rel="stylesheet" href="styles/style.css"id="theme-link">
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="styles/normalize.css" integrity="sha512-igBRGs3D8KMG7RuZibzRGhv327gt4DNnhYusdMqFS9Vx85/nUZpLyHigPHSpEoKd4hn4CjWGeoNRYeM/TB3GWw==" 
+    crossorigin="anonymous>
+    <link rel="stylesheet" href="styles/dark_theme.css" integrity="sha512-igBRGs3D8KMG7RuZibzRGhv327gt4DNnhYusdMqFS9Vx85/nUZpLyHigPHSpEoKd4hn4CjWGeoNRYeM/TB3GWw==" 
+    crossorigin="anonymous>
+    <link rel="stylesheet" href="styles/style.css"id="theme-link" integrity="sha512-igBRGs3D8KMG7RuZibzRGhv327gt4DNnhYusdMqFS9Vx85/nUZpLyHigPHSpEoKd4hn4CjWGeoNRYeM/TB3GWw==" 
+    crossorigin="anonymous>
     <title>Ryan James | Portfolio</title>
 </head>
 
 <body>
     <nav>
         <h3 class="desktop-header">RYAN JAMES</h3>
+        <!--For Mobile/Tablet nav-heading-->
         <label for="expand-toggle" class="navbar-header">&#9776;</h3></label>
         <input type="checkbox" id="expand-toggle" />
-
+        
         <ul class="navbar-ul">
             <li class="nav-styling a"><a href="index.html">Home</a></li>
             <li class="nav-styling b"><a href="about.html">About</a></li>
@@ -45,65 +52,68 @@
     </nav>
 
     <main id="card-main" class="card-main blog-background">
-        <div class="description-container animate__animated animate__slideInLeft">
+        <section class="description-container animate__animated animate__slideInLeft">
             <h2>Blog</h2>
             <p>Check out my blogs! You'll find entries about my journey learning css </p>
-        </div>
+        </section>
 
-        <div class="card-container animate__animated animate__slideInLeft" >
-            <div class="project-card">
-                <img class="about-image" src="https://via.placeholder.com/350" alt="placeholder">
+        <section class="card-container animate__animated animate__slideInLeft" >
+            <article class="project-card">
+                <img class="blog_image" src="../src/images/blog1_pic.jpg" alt="placeholder">
                 <a href="Blogs/blog1.html" target="_blank">
                     <div class="image_overlay">
                         <div class="image_title">Blog 1</div>
                     </div>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="project-card">
-                <img class="about-image" src="https://via.placeholder.com/350" alt="placeholder">
+            </article>
+
+            <article class="project-card">
+                <img class="blog_image" src="../src/images/blog2_pic.jpg" alt="placeholder">
                 <a href="Blogs/blog2.html" target="_blank">
                     <div class="image_overlay">
                         <div class="image_title">Blog 2</div>
                     </div>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+            </article>
             
-            <div class="project-card">
-                <img class="about-image" src="https://via.placeholder.com/350" alt="placeholder">
+            <article class="project-card">
+                <img class="blog_image" src="../src/images/blog3_pic.jpg" alt="placeholder">
                 <a href="Blogs/blog3.html" target="_blank">
                     <div class="image_overlay">
                         <div class="image_title">Blog 3</div>
                     </div>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+            </article>
             
-            <div class="project-card">
-                <img class="about-image" src="https://via.placeholder.com/350" alt="placeholder">
+            <article class="project-card">
+                <img class="blog_image" src="../src/images/blog4_pic.jpg" alt="placeholder">
                 <a href="Blogs/blog4.html" target="_blank">
                     <div class="image_overlay">
                         <div class="image_title">Blog 4</div>
                     </div>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
+            </article>
 
-            <div class="project-card">
-                <img class="about-image" src="https://via.placeholder.com/350" alt="placeholder">
+            <article class="project-card">
+                <img class="blog_image" src="../src/images/blog5_pic.jpg" alt="placeholder">
                 <a href="Blogs/blog5.html" target="_blank">
                     <div class="image_overlay">
                         <div class="image_title">Blog 5</div>
                     </div>
                 </a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
+            </article>
+        </section>
+        <!--Light and fark theme toggle-->
         <div class="dark_light_theme">
             <label for="expand_theme" class="theme_link">&#9728;</label>
             <input type="checkbox" class="expand_theme" />
         </div>
+
     </main>
 </body>
 
@@ -127,5 +137,6 @@
     <div class="footer-line"></div>
     <p>&copy; 2020</p>
 </footer>
-<script src="main.js"></script>
+<script src="main.js" integrity="sha512-igBRGs3D8KMG7RuZibzRGhv327gt4DNnhYusdMqFS9Vx85/nUZpLyHigPHSpEoKd4hn4CjWGeoNRYeM/TB3GWw==" 
+crossorigin="anonymous></script>
 </html>
